@@ -1,0 +1,8 @@
+# IDEs
+.idea/
+.code/
+.fleet/
+
+# Rust
+/target
+Cargo.lock
