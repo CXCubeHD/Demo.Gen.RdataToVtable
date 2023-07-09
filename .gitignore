@@ -1,6 +1,6 @@
 # IDEs
 .idea/
-.code/
+.vscode/
 .fleet/
 
 # Rust
