@@ -10,8 +10,8 @@
       "parameter_types": [
         "enum ActorFlags"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?setStatusFlag@Actor@@UEAAXW4ActorFlags@@_N@Z",
@@ -23,8 +23,8 @@
         "enum ActorFlags",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?hasComponent@Mob@@UEBA_NAEBVHashedString@@@Z",
@@ -35,8 +35,8 @@
       "parameter_types": [
         "class HashedString const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getLastHurtByMob@Actor@@UEAAPEAVMob@@XZ",
@@ -45,8 +45,8 @@
       "name": "getLastHurtByMob",
       "scoped_name": "Actor::getLastHurtByMob",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class Mob *",
+      "visibility": "public"
     },
     {
       "symbol": "?setLastHurtByMob@Actor@@UEAAXPEAVMob@@@Z",
@@ -57,8 +57,8 @@
       "parameter_types": [
         "class Mob *"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getLastHurtByPlayer@Actor@@UEAAPEAVPlayer@@XZ",
@@ -67,8 +67,8 @@
       "name": "getLastHurtByPlayer",
       "scoped_name": "Actor::getLastHurtByPlayer",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class Player *",
+      "visibility": "public"
     },
     {
       "symbol": "?setLastHurtByPlayer@Actor@@UEAAXPEAVPlayer@@@Z",
@@ -79,8 +79,8 @@
       "parameter_types": [
         "class Player *"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getLastHurtMob@Actor@@UEAAPEAVMob@@XZ",
@@ -89,8 +89,8 @@
       "name": "getLastHurtMob",
       "scoped_name": "Actor::getLastHurtMob",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class Mob *",
+      "visibility": "public"
     },
     {
       "symbol": "?setLastHurtMob@Actor@@UEAAXPEAV1@@Z",
@@ -101,8 +101,8 @@
       "parameter_types": [
         "class Actor *"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?outOfWorld@Mob@@MEAAXXZ",
@@ -111,8 +111,8 @@
       "name": "outOfWorld",
       "scoped_name": "Mob::outOfWorld",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?reloadHardcoded@Player@@UEAAXW4InitializationMethod@Actor@@AEBVVariantParameterList@@@Z",
@@ -124,8 +124,8 @@
         "enum Actor::InitializationMethod",
         "class VariantParameterList const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?reloadHardcodedClient@Mob@@UEAAXW4InitializationMethod@Actor@@AEBVVariantParameterList@@@Z",
@@ -137,8 +137,8 @@
         "enum Actor::InitializationMethod",
         "class VariantParameterList const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?initializeComponents@ServerPlayer@@UEAAXW4InitializationMethod@Actor@@AEBVVariantParameterList@@@Z",
@@ -150,8 +150,8 @@
         "enum Actor::InitializationMethod",
         "class VariantParameterList const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?reloadComponents@Actor@@MEAAXW4InitializationMethod@1@AEBVVariantParameterList@@@Z",
@@ -163,8 +163,8 @@
         "enum Actor::InitializationMethod",
         "class VariantParameterList const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?_serverInitItemStackIds@ServerPlayer@@EEAAXXZ",
@@ -173,8 +173,8 @@
       "name": "_serverInitItemStackIds",
       "scoped_name": "ServerPlayer::_serverInitItemStackIds",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "private"
     },
     {
       "symbol": "?_doInitialMove@Mob@@MEAAXXZ",
@@ -183,8 +183,8 @@
       "name": "_doInitialMove",
       "scoped_name": "Mob::_doInitialMove",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "??_EServerPlayer@@UEAAPEAXI@Z",
@@ -195,8 +195,8 @@
       "parameter_types": [
         "unsigned int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void *",
+      "visibility": "public"
     },
     {
       "symbol": "?resetUserPos@Player@@UEAAX_N@Z",
@@ -207,8 +207,8 @@
       "parameter_types": [
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getOwnerEntityType@Actor@@UEAA?AW4ActorType@@XZ",
@@ -217,8 +217,8 @@
       "name": "getOwnerEntityType",
       "scoped_name": "Actor::getOwnerEntityType",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "enum ActorType",
+      "visibility": "public"
     },
     {
       "symbol": "?remove@Player@@UEAAXXZ",
@@ -227,8 +227,8 @@
       "name": "remove",
       "scoped_name": "Player::remove",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VScriptAfterEvents@ScriptModuleMinecraft@@$00$MP812@EAAAEAV?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@2@XZH??$_getSignalByType@V?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@ScriptModuleMinecraft@@@12@AEAAAEAV32@XZA@@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -247,8 +247,8 @@
       "name": "getPredictedMovementValues",
       "scoped_name": "Actor::getPredictedMovementValues",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "struct PredictedMovementValues const &",
+      "visibility": "public"
     },
     {
       "symbol": "?getPosition@Actor@@UEBAAEBVVec3@@XZ",
@@ -257,8 +257,8 @@
       "name": "getPosition",
       "scoped_name": "Actor::getPosition",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class Vec3 const &",
+      "visibility": "public"
     },
     {
       "symbol": "?getPosPrev@Actor@@UEBAAEBVVec3@@XZ",
@@ -267,8 +267,8 @@
       "name": "getPosPrev",
       "scoped_name": "Actor::getPosPrev",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class Vec3 const &",
+      "visibility": "public"
     },
     {
       "symbol": "?getPosExtrapolated@Actor@@UEBA?BVVec3@@M@Z",
@@ -279,8 +279,8 @@
       "parameter_types": [
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class Vec3 const",
+      "visibility": "public"
     },
     {
       "symbol": "?getAttachPos@Player@@UEBA?AVVec3@@W4ActorLocation@@M@Z",
@@ -292,8 +292,8 @@
         "enum ActorLocation",
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class Vec3",
+      "visibility": "public"
     },
     {
       "symbol": "?getFiringPos@Actor@@UEBA?AVVec3@@XZ",
@@ -302,8 +302,8 @@
       "name": "getFiringPos",
       "scoped_name": "Actor::getFiringPos",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class Vec3",
+      "visibility": "public"
     },
     {
       "symbol": "?move@Player@@UEBAXAEAUIActorMovementProxy@@AEBVVec3@@@Z",
@@ -315,8 +315,8 @@
         "struct IActorMovementProxy &",
         "class Vec3 const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?move@Player@@UEAAXAEBVVec3@@@Z",
@@ -327,8 +327,8 @@
       "parameter_types": [
         "class Vec3 const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getInterpolatedRidingPosition@Actor@@UEBA?AVVec3@@M@Z",
@@ -339,8 +339,8 @@
       "parameter_types": [
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class Vec3",
+      "visibility": "public"
     },
     {
       "symbol": "?getInterpolatedBodyRot@Mob@@UEBAMM@Z",
@@ -351,8 +351,8 @@
       "parameter_types": [
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getInterpolatedHeadRot@Mob@@UEBAMM@Z",
@@ -363,8 +363,8 @@
       "parameter_types": [
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getInterpolatedBodyYaw@Mob@@UEBAMM@Z",
@@ -375,8 +375,8 @@
       "parameter_types": [
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getYawSpeedInDegreesPerSecond@Mob@@UEBAMXZ",
@@ -385,8 +385,8 @@
       "name": "getYawSpeedInDegreesPerSecond",
       "scoped_name": "Mob::getYawSpeedInDegreesPerSecond",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getInterpolatedWalkAnimSpeed@Actor@@UEBAMM@Z",
@@ -397,8 +397,8 @@
       "parameter_types": [
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getInterpolatedRidingOffset@Player@@UEBA?AVVec3@@MH@Z",
@@ -410,8 +410,8 @@
         "float",
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class Vec3",
+      "visibility": "public"
     },
     {
       "symbol": "?resetInterpolated@Mob@@UEAAXXZ",
@@ -420,8 +420,8 @@
       "name": "resetInterpolated",
       "scoped_name": "Mob::resetInterpolated",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?updateEntityInside@Actor@@UEAAXXZ",
@@ -430,8 +430,8 @@
       "name": "updateEntityInside",
       "scoped_name": "Actor::updateEntityInside",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?updateEntityInside@Actor@@UEAAXAEBVAABB@@@Z",
@@ -442,8 +442,8 @@
       "parameter_types": [
         "class AABB const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?isFireImmune@Player@@UEBA_NXZ",
@@ -452,8 +452,8 @@
       "name": "isFireImmune",
       "scoped_name": "Player::isFireImmune",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VMovementScriptActorComponent@ScriptModuleMinecraft@@$0A@$MP812@EBA?AV?$Result@M@Scripting@@XZ1??_912@$B7AA@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -463,7 +463,7 @@
       "scoped_name": "Scripting::Reflection::MemberPropertyGetter<ScriptModuleMinecraft::MovementScriptActorComponent,0,&ScriptModuleMinecraft::MovementScriptActorComponent::`vcall'{8}'>::getReturnPolicy",
       "parameter_types": [],
       "return_type": "",
-      "visibility": ""
+      "visibility": "public"
     },
     {
       "symbol": "?blockedByShield@Mob@@UEAAXAEBVActorDamageSource@@AEAVActor@@@Z",
@@ -475,8 +475,8 @@
         "class ActorDamageSource const &",
         "class Actor &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?canDisableShield@Actor@@UEAA_NXZ",
@@ -485,8 +485,8 @@
       "name": "canDisableShield",
       "scoped_name": "Actor::canDisableShield",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?teleportTo@Player@@UEAAXAEBVVec3@@_NHH1@Z",
@@ -501,8 +501,8 @@
         "int",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?tryTeleportTo@Actor@@UEAA_NAEBVVec3@@_N1HH@Z",
@@ -517,8 +517,8 @@
         "int",
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?chorusFruitTeleport@Actor@@UEAAXAEBVVec3@@@Z",
@@ -529,8 +529,8 @@
       "parameter_types": [
         "class Vec3 const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?lerpMotion@Actor@@UEAAXAEBVVec3@@@Z",
@@ -541,8 +541,8 @@
       "parameter_types": [
         "class Vec3 const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?tryCreateAddActorPacket@Player@@UEAA?AV?$unique_ptr@VAddActorBasePacket@@U?$default_delete@VAddActorBasePacket@@@std@@@std@@XZ",
@@ -551,8 +551,8 @@
       "name": "tryCreateAddActorPacket",
       "scoped_name": "Player::tryCreateAddActorPacket",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::unique_ptr<class AddActorBasePacket,struct std::default_delete<class AddActorBasePacket> >",
+      "visibility": "public"
     },
     {
       "symbol": "?normalTick@ServerPlayer@@UEAAXXZ",
@@ -561,8 +561,8 @@
       "name": "normalTick",
       "scoped_name": "ServerPlayer::normalTick",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?baseTick@Mob@@UEAAXXZ",
@@ -571,8 +571,8 @@
       "name": "baseTick",
       "scoped_name": "Mob::baseTick",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?passengerTick@Player@@UEAAXXZ",
@@ -581,8 +581,8 @@
       "name": "passengerTick",
       "scoped_name": "Player::passengerTick",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?positionPassenger@Actor@@UEAAXAEAV1@M@Z",
@@ -594,8 +594,8 @@
         "class Actor &",
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?startRiding@Mob@@UEAA_NAEAVActor@@@Z",
@@ -606,8 +606,8 @@
       "parameter_types": [
         "class Actor &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?addPassenger@Mob@@UEAAXAEAVActor@@@Z",
@@ -618,8 +618,8 @@
       "parameter_types": [
         "class Actor &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?flagPassengerToRemove@Actor@@UEAAXAEAV1@@Z",
@@ -630,8 +630,8 @@
       "parameter_types": [
         "class Actor &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getExitTip@Actor@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@W4InputMode@@W4NewInteractionModel@@@Z",
@@ -644,8 +644,8 @@
         "enum InputMode",
         "enum NewInteractionModel"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >",
+      "visibility": "public"
     },
     {
       "symbol": "?getEntityLocNameString@Actor@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
@@ -654,8 +654,8 @@
       "name": "getEntityLocNameString",
       "scoped_name": "Actor::getEntityLocNameString",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >",
+      "visibility": "public"
     },
     {
       "symbol": "?intersects@Actor@@UEBA_NAEBVVec3@@0@Z",
@@ -667,8 +667,8 @@
         "class Vec3 const &",
         "class Vec3 const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?isInWall@Actor@@UEBA_NXZ",
@@ -677,8 +677,8 @@
       "name": "isInWall",
       "scoped_name": "Actor::isInWall",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?isInvisible@Actor@@UEBA_NXZ",
@@ -687,8 +687,8 @@
       "name": "isInvisible",
       "scoped_name": "Actor::isInvisible",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?canShowNameTag@Actor@@UEBA_NXZ",
@@ -697,8 +697,8 @@
       "name": "canShowNameTag",
       "scoped_name": "Actor::canShowNameTag",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VScriptAfterEvents@ScriptModuleMinecraft@@$00$MP812@EAAAEAV?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@2@XZH??$_getSignalByType@V?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@ScriptModuleMinecraft@@@12@AEAAAEAV32@XZA@@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -719,8 +719,8 @@
       "parameter_types": [
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getNameTag@Actor@@UEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
@@ -729,8 +729,8 @@
       "name": "getNameTag",
       "scoped_name": "Actor::getNameTag",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &",
+      "visibility": "public"
     },
     {
       "symbol": "?getSeasons@Dimension@@QEAAAEAVSeasons@@XZ",
@@ -739,8 +739,8 @@
       "name": "getSeasons",
       "scoped_name": "Dimension::getSeasons",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class Seasons &",
+      "visibility": "public"
     },
     {
       "symbol": "?getFormattedNameTag@Player@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
@@ -749,8 +749,8 @@
       "name": "getFormattedNameTag",
       "scoped_name": "Player::getFormattedNameTag",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >",
+      "visibility": "public"
     },
     {
       "symbol": "?filterFormattedNameTag@Actor@@UEAAXAEBVUIProfanityContext@@@Z",
@@ -761,8 +761,8 @@
       "parameter_types": [
         "class UIProfanityContext const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?setNameTag@Actor@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
@@ -773,8 +773,8 @@
       "parameter_types": [
         "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VScriptAfterEvents@ScriptModuleMinecraft@@$00$MP812@EAAAEAV?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@2@XZH??$_getSignalByType@V?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@ScriptModuleMinecraft@@@12@AEAAAEAV32@XZA@@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -795,8 +795,8 @@
       "parameter_types": [
         "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getScoreTag@Actor@@UEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
@@ -805,8 +805,8 @@
       "name": "getScoreTag",
       "scoped_name": "Actor::getScoreTag",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &",
+      "visibility": "public"
     },
     {
       "symbol": "?isInWater@Actor@@UEBA_NXZ",
@@ -815,8 +815,8 @@
       "name": "isInWater",
       "scoped_name": "Actor::isInWater",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?isUnderLiquid@Actor@@UEBA_NW4MaterialType@@@Z",
@@ -827,8 +827,8 @@
       "parameter_types": [
         "enum MaterialType"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?isOverWater@Actor@@UEBA_NXZ",
@@ -837,8 +837,8 @@
       "name": "isOverWater",
       "scoped_name": "Actor::isOverWater",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?setBlockMovementSlowdownMultiplier@Player@@UEAAXAEBVBlockLegacy@@AEBVVec3@@@Z",
@@ -850,8 +850,8 @@
         "class BlockLegacy const &",
         "class Vec3 const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?resetBlockMovementSlowdownMultiplier@Actor@@UEAAXXZ",
@@ -860,8 +860,8 @@
       "name": "resetBlockMovementSlowdownMultiplier",
       "scoped_name": "Actor::resetBlockMovementSlowdownMultiplier",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getCameraOffset@Player@@UEBAMXZ",
@@ -870,8 +870,8 @@
       "name": "getCameraOffset",
       "scoped_name": "Player::getCameraOffset",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getShadowHeightOffs@Actor@@UEAAMXZ",
@@ -880,8 +880,8 @@
       "name": "getShadowHeightOffs",
       "scoped_name": "Actor::getShadowHeightOffs",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getShadowRadius@Player@@UEBAMXZ",
@@ -890,8 +890,8 @@
       "name": "getShadowRadius",
       "scoped_name": "Player::getShadowRadius",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getHeadLookVector@Actor@@UEBA?AVVec3@@M@Z",
@@ -902,8 +902,8 @@
       "parameter_types": [
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class Vec3",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VMovementScriptActorComponent@ScriptModuleMinecraft@@$0A@$MP812@EBA?AV?$Result@M@Scripting@@XZ1??_912@$B7AA@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -913,7 +913,7 @@
       "scoped_name": "Scripting::Reflection::MemberPropertyGetter<ScriptModuleMinecraft::MovementScriptActorComponent,0,&ScriptModuleMinecraft::MovementScriptActorComponent::`vcall'{8}'>::getReturnPolicy",
       "parameter_types": [],
       "return_type": "",
-      "visibility": ""
+      "visibility": "public"
     },
     {
       "symbol": "?canSee@Actor@@UEBA_NAEBVVec3@@@Z",
@@ -924,8 +924,8 @@
       "parameter_types": [
         "class Vec3 const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?canSee@Actor@@UEBA_NAEBV1@@Z",
@@ -936,8 +936,8 @@
       "parameter_types": [
         "class Actor const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?canInteractWithOtherEntitiesInGame@Player@@UEBA_NXZ",
@@ -946,8 +946,8 @@
       "name": "canInteractWithOtherEntitiesInGame",
       "scoped_name": "Player::canInteractWithOtherEntitiesInGame",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?isSkyLit@Actor@@UEAA_NM@Z",
@@ -958,8 +958,8 @@
       "parameter_types": [
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getBrightness@Actor@@UEBAMMAEBVIConstBlockSource@@@Z",
@@ -971,8 +971,8 @@
         "float",
         "class IConstBlockSource const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VMovementScriptActorComponent@ScriptModuleMinecraft@@$0A@$MP812@EBA?AV?$Result@M@Scripting@@XZ1??_912@$B7AA@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -982,7 +982,7 @@
       "scoped_name": "Scripting::Reflection::MemberPropertyGetter<ScriptModuleMinecraft::MovementScriptActorComponent,0,&ScriptModuleMinecraft::MovementScriptActorComponent::`vcall'{8}'>::getReturnPolicy",
       "parameter_types": [],
       "return_type": "",
-      "visibility": ""
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -1003,8 +1003,8 @@
       "parameter_types": [
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?onInsideBubbleColumn@Actor@@UEAAX_N@Z",
@@ -1015,8 +1015,8 @@
       "parameter_types": [
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?isImmobile@Player@@UEBA_NXZ",
@@ -1025,8 +1025,8 @@
       "name": "isImmobile",
       "scoped_name": "Player::isImmobile",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?isSilent@Actor@@UEBA_NXZ",
@@ -1035,8 +1035,8 @@
       "name": "isSilent",
       "scoped_name": "Actor::isSilent",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?_doSprintParticleEffect@Mob@@IEAAXXZ",
@@ -1045,8 +1045,8 @@
       "name": "_doSprintParticleEffect",
       "scoped_name": "Mob::_doSprintParticleEffect",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?isPickable@Mob@@UEAA_NXZ",
@@ -1055,8 +1055,8 @@
       "name": "isPickable",
       "scoped_name": "Mob::isPickable",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VScriptAfterEvents@ScriptModuleMinecraft@@$00$MP812@EAAAEAV?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@2@XZH??$_getSignalByType@V?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@ScriptModuleMinecraft@@@12@AEAAAEAV32@XZA@@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -1075,8 +1075,8 @@
       "name": "isSleeping",
       "scoped_name": "Player::isSleeping",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?setSleeping@Player@@UEAAX_N@Z",
@@ -1087,8 +1087,8 @@
       "parameter_types": [
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VScriptAfterEvents@ScriptModuleMinecraft@@$00$MP812@EAAAEAV?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@2@XZH??$_getSignalByType@V?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@ScriptModuleMinecraft@@@12@AEAAAEAV32@XZA@@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -1109,8 +1109,8 @@
       "parameter_types": [
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?isBlocking@Player@@UEBA_NXZ",
@@ -1119,8 +1119,8 @@
       "name": "isBlocking",
       "scoped_name": "Player::isBlocking",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?isDamageBlocked@Player@@UEBA_NAEBVActorDamageSource@@@Z",
@@ -1131,8 +1131,8 @@
       "parameter_types": [
         "class ActorDamageSource const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?isAlive@Mob@@UEBA_NXZ",
@@ -1141,8 +1141,8 @@
       "name": "isAlive",
       "scoped_name": "Mob::isAlive",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?isOnFire@Actor@@UEBA_NXZ",
@@ -1151,8 +1151,8 @@
       "name": "isOnFire",
       "scoped_name": "Actor::isOnFire",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?isOnHotBlock@Actor@@UEBA_NXZ",
@@ -1161,8 +1161,8 @@
       "name": "isOnHotBlock",
       "scoped_name": "Actor::isOnHotBlock",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VScriptAfterEvents@ScriptModuleMinecraft@@$00$MP812@EAAAEAV?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@2@XZH??$_getSignalByType@V?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@ScriptModuleMinecraft@@@12@AEAAAEAV32@XZA@@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -1181,8 +1181,8 @@
       "name": "isSurfaceMob",
       "scoped_name": "Mob::isSurfaceMob",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VScriptAfterEvents@ScriptModuleMinecraft@@$00$MP812@EAAAEAV?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@2@XZH??$_getSignalByType@V?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@ScriptModuleMinecraft@@@12@AEAAAEAV32@XZA@@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -1202,7 +1202,7 @@
       "scoped_name": "Scripting::Reflection::MemberPropertyGetter<ScriptModuleMinecraft::MovementScriptActorComponent,0,&ScriptModuleMinecraft::MovementScriptActorComponent::`vcall'{8}'>::getReturnPolicy",
       "parameter_types": [],
       "return_type": "",
-      "visibility": ""
+      "visibility": "public"
     },
     {
       "symbol": "?isRemotePlayer@Actor@@UEBA_NXZ",
@@ -1211,8 +1211,8 @@
       "name": "isRemotePlayer",
       "scoped_name": "Actor::isRemotePlayer",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VScriptAfterEvents@ScriptModuleMinecraft@@$00$MP812@EAAAEAV?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@2@XZH??$_getSignalByType@V?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@ScriptModuleMinecraft@@@12@AEAAAEAV32@XZA@@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -1231,8 +1231,8 @@
       "name": "isAffectedByWaterBottle",
       "scoped_name": "Actor::isAffectedByWaterBottle",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?canAttack@Actor@@UEBA_NPEAV1@_N@Z",
@@ -1244,8 +1244,8 @@
         "class Actor *",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?setTarget@Mob@@UEAAXPEAVActor@@@Z",
@@ -1256,8 +1256,8 @@
       "parameter_types": [
         "class Actor *"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?isValidTarget@ServerPlayer@@UEBA_NPEAVActor@@@Z",
@@ -1268,8 +1268,8 @@
       "parameter_types": [
         "class Actor *"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?attack@Player@@UEAA_NAEAVActor@@AEBW4ActorDamageCause@@@Z",
@@ -1281,8 +1281,8 @@
         "class Actor &",
         "enum ActorDamageCause const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?performRangedAttack@Actor@@UEAAXAEAV1@M@Z",
@@ -1294,8 +1294,8 @@
         "class Actor &",
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getEquipmentCount@Actor@@UEBAHXZ",
@@ -1304,8 +1304,8 @@
       "name": "getEquipmentCount",
       "scoped_name": "Actor::getEquipmentCount",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?setOwner@Actor@@UEAAXUActorUniqueID@@@Z",
@@ -1316,8 +1316,8 @@
       "parameter_types": [
         "struct ActorUniqueID"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?setSitting@Actor@@UEAAX_N@Z",
@@ -1328,8 +1328,8 @@
       "parameter_types": [
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -1358,8 +1358,8 @@
       "name": "getInventorySize",
       "scoped_name": "Actor::getInventorySize",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?getEquipSlots@Actor@@UEBAHXZ",
@@ -1368,8 +1368,8 @@
       "name": "getEquipSlots",
       "scoped_name": "Actor::getEquipSlots",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?getChestSlots@Actor@@UEBAHXZ",
@@ -1378,8 +1378,8 @@
       "name": "getChestSlots",
       "scoped_name": "Actor::getChestSlots",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?setStanding@Actor@@UEAAX_N@Z",
@@ -1390,8 +1390,8 @@
       "parameter_types": [
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?canPowerJump@Mob@@UEBA_NXZ",
@@ -1400,8 +1400,8 @@
       "name": "canPowerJump",
       "scoped_name": "Mob::canPowerJump",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?setCanPowerJump@Actor@@UEAAX_N@Z",
@@ -1412,8 +1412,8 @@
       "parameter_types": [
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?isEnchanted@Actor@@UEBA_NXZ",
@@ -1422,8 +1422,8 @@
       "name": "isEnchanted",
       "scoped_name": "Actor::isEnchanted",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -1442,8 +1442,8 @@
       "name": "shouldRender",
       "scoped_name": "Actor::shouldRender",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?playAmbientSound@Actor@@UEAAXXZ",
@@ -1452,8 +1452,8 @@
       "name": "playAmbientSound",
       "scoped_name": "Actor::playAmbientSound",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getAmbientSound@Actor@@UEBA?AW4LevelSoundEvent@@XZ",
@@ -1462,8 +1462,8 @@
       "name": "getAmbientSound",
       "scoped_name": "Actor::getAmbientSound",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "enum LevelSoundEvent",
+      "visibility": "public"
     },
     {
       "symbol": "?isInvulnerableTo@Player@@UEBA_NAEBVActorDamageSource@@@Z",
@@ -1474,8 +1474,8 @@
       "parameter_types": [
         "class ActorDamageSource const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getBlockDamageCause@Mob@@UEBA?AW4ActorDamageCause@@AEBVBlock@@@Z",
@@ -1486,8 +1486,8 @@
       "parameter_types": [
         "class Block const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "enum ActorDamageCause",
+      "visibility": "public"
     },
     {
       "symbol": "?animateHurt@Mob@@UEAAXXZ",
@@ -1496,8 +1496,8 @@
       "name": "animateHurt",
       "scoped_name": "Mob::animateHurt",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?doFireHurt@Mob@@UEAA_NH@Z",
@@ -1508,8 +1508,8 @@
       "parameter_types": [
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?onLightningHit@Actor@@UEAAXXZ",
@@ -1518,8 +1518,8 @@
       "name": "onLightningHit",
       "scoped_name": "Actor::onLightningHit",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?onBounceStarted@Player@@MEAAXAEBVBlockPos@@AEBVBlock@@@Z",
@@ -1531,8 +1531,8 @@
         "class BlockPos const &",
         "class Block const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?feed@Player@@UEAAXH@Z",
@@ -1543,8 +1543,8 @@
       "parameter_types": [
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?handleEntityEvent@ServerPlayer@@UEAAXW4ActorEvent@@H@Z",
@@ -1556,8 +1556,8 @@
         "enum ActorEvent",
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getPickRadius@Actor@@UEAAMXZ",
@@ -1566,8 +1566,8 @@
       "name": "getPickRadius",
       "scoped_name": "Actor::getPickRadius",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getActorRendererId@Player@@UEBAAEBVHashedString@@XZ",
@@ -1576,8 +1576,8 @@
       "name": "getActorRendererId",
       "scoped_name": "Player::getActorRendererId",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class HashedString const &",
+      "visibility": "public"
     },
     {
       "symbol": "?spawnAtLocation@Actor@@UEAAPEAVItemActor@@AEBVItemStack@@M@Z",
@@ -1589,8 +1589,8 @@
         "class ItemStack const &",
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class ItemActor *",
+      "visibility": "public"
     },
     {
       "symbol": "?spawnAtLocation@Actor@@UEAAPEAVItemActor@@HHM@Z",
@@ -1603,8 +1603,8 @@
         "int",
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class ItemActor *",
+      "visibility": "public"
     },
     {
       "symbol": "?spawnAtLocation@Actor@@UEAAPEAVItemActor@@HH@Z",
@@ -1616,8 +1616,8 @@
         "int",
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class ItemActor *",
+      "visibility": "public"
     },
     {
       "symbol": "?despawn@Actor@@UEAAXXZ",
@@ -1626,8 +1626,8 @@
       "name": "despawn",
       "scoped_name": "Actor::despawn",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?killed@Actor@@UEAAXAEAV1@@Z",
@@ -1638,8 +1638,8 @@
       "parameter_types": [
         "class Actor &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?awardKillScore@Player@@UEAAXAEAVActor@@H@Z",
@@ -1651,8 +1651,8 @@
         "class Actor &",
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?setArmor@ServerPlayer@@UEAAXW4ArmorSlot@@AEBVItemStack@@@Z",
@@ -1664,8 +1664,8 @@
         "enum ArmorSlot",
         "class ItemStack const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getArmor@Actor@@UEBAAEBVItemStack@@W4ArmorSlot@@@Z",
@@ -1676,8 +1676,8 @@
       "parameter_types": [
         "enum ArmorSlot"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class ItemStack const &",
+      "visibility": "public"
     },
     {
       "symbol": "?getAllArmor@Actor@@UEBA?AV?$vector@PEBVItemStack@@V?$allocator@PEBVItemStack@@@std@@@std@@XZ",
@@ -1686,8 +1686,8 @@
       "name": "getAllArmor",
       "scoped_name": "Actor::getAllArmor",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::vector<class ItemStack const *,class std::allocator<class ItemStack const *> >",
+      "visibility": "public"
     },
     {
       "symbol": "?getArmorMaterialTypeInSlot@Mob@@UEBA?AW4ArmorMaterialType@@W4ArmorSlot@@@Z",
@@ -1698,8 +1698,8 @@
       "parameter_types": [
         "enum ArmorSlot"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "enum ArmorMaterialType",
+      "visibility": "public"
     },
     {
       "symbol": "?getArmorMaterialTextureTypeInSlot@Mob@@UEBA?AW4ArmorTextureType@@W4ArmorSlot@@@Z",
@@ -1710,8 +1710,8 @@
       "parameter_types": [
         "enum ArmorSlot"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "enum ArmorTextureType",
+      "visibility": "public"
     },
     {
       "symbol": "?getArmorColorInSlot@Mob@@UEBAMW4ArmorSlot@@H@Z",
@@ -1723,8 +1723,8 @@
         "enum ArmorSlot",
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getEquippedSlot@Actor@@UEBAAEBVItemStack@@W4EquipmentSlot@@@Z",
@@ -1735,8 +1735,8 @@
       "parameter_types": [
         "enum EquipmentSlot"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class ItemStack const &",
+      "visibility": "public"
     },
     {
       "symbol": "?setEquippedSlot@Mob@@UEAAXW4EquipmentSlot@@AEBVItemStack@@@Z",
@@ -1748,8 +1748,8 @@
         "enum EquipmentSlot",
         "class ItemStack const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?setCarriedItem@Player@@UEAAXAEBVItemStack@@@Z",
@@ -1760,8 +1760,8 @@
       "parameter_types": [
         "class ItemStack const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getSelectedItem@Player@@QEBAAEBVItemStack@@XZ",
@@ -1770,8 +1770,8 @@
       "name": "getSelectedItem",
       "scoped_name": "Player::getSelectedItem",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class ItemStack const &",
+      "visibility": "public"
     },
     {
       "symbol": "?setOffhandSlot@ServerPlayer@@UEAAXAEBVItemStack@@@Z",
@@ -1782,8 +1782,8 @@
       "parameter_types": [
         "class ItemStack const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getEquippedTotem@Player@@UEBAAEBVItemStack@@XZ",
@@ -1792,8 +1792,8 @@
       "name": "getEquippedTotem",
       "scoped_name": "Player::getEquippedTotem",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class ItemStack const &",
+      "visibility": "public"
     },
     {
       "symbol": "?consumeTotem@Player@@UEAA_NXZ",
@@ -1802,8 +1802,8 @@
       "name": "consumeTotem",
       "scoped_name": "Player::consumeTotem",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?save@Actor@@UEBA_NAEAVCompoundTag@@@Z",
@@ -1814,8 +1814,8 @@
       "parameter_types": [
         "class CompoundTag &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?saveWithoutId@Actor@@UEBAXAEAVCompoundTag@@@Z",
@@ -1826,8 +1826,8 @@
       "parameter_types": [
         "class CompoundTag &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?load@ServerPlayer@@UEAA_NAEBVCompoundTag@@AEAVDataLoadHelper@@@Z",
@@ -1839,8 +1839,8 @@
         "class CompoundTag const &",
         "class DataLoadHelper &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?loadLinks@Actor@@UEAAXAEBVCompoundTag@@AEAV?$vector@UActorLink@@V?$allocator@UActorLink@@@std@@@std@@AEAVDataLoadHelper@@@Z",
@@ -1853,8 +1853,8 @@
         "class std::vector<struct ActorLink,class std::allocator<struct ActorLink> > &",
         "class DataLoadHelper &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getEntityTypeId@Player@@UEBA?AW4ActorType@@XZ",
@@ -1863,8 +1863,8 @@
       "name": "getEntityTypeId",
       "scoped_name": "Player::getEntityTypeId",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "enum ActorType",
+      "visibility": "public"
     },
     {
       "symbol": "?getRawName@ActorAnimationControllerStatePlayer@@UEBAAEBVHashedString@@XZ",
@@ -1873,8 +1873,8 @@
       "name": "getRawName",
       "scoped_name": "ActorAnimationControllerStatePlayer::getRawName",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class HashedString const &",
+      "visibility": "public"
     },
     {
       "symbol": "?getSourceUniqueID@Actor@@UEBA?AUActorUniqueID@@XZ",
@@ -1883,8 +1883,8 @@
       "name": "getSourceUniqueID",
       "scoped_name": "Actor::getSourceUniqueID",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "struct ActorUniqueID",
+      "visibility": "public"
     },
     {
       "symbol": "?thawFreezeEffect@Actor@@UEAAXXZ",
@@ -1893,8 +1893,8 @@
       "name": "thawFreezeEffect",
       "scoped_name": "Actor::thawFreezeEffect",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?canFreeze@Player@@UEBA_NXZ",
@@ -1903,8 +1903,8 @@
       "name": "canFreeze",
       "scoped_name": "Player::canFreeze",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?isWearingLeatherArmor@Actor@@UEBA?B_NXZ",
@@ -1913,8 +1913,8 @@
       "name": "isWearingLeatherArmor",
       "scoped_name": "Actor::isWearingLeatherArmor",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool const",
+      "visibility": "public"
     },
     {
       "symbol": "?getLiquidAABB@Actor@@UEBA?AVAABB@@W4MaterialType@@@Z",
@@ -1925,8 +1925,8 @@
       "parameter_types": [
         "enum MaterialType"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class AABB",
+      "visibility": "public"
     },
     {
       "symbol": "?handleInsidePortal@Actor@@UEAAXAEBVBlockPos@@@Z",
@@ -1937,8 +1937,8 @@
       "parameter_types": [
         "class BlockPos const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getRange@SculkCatalystBlockActor@@UEBAIXZ",
@@ -1947,8 +1947,8 @@
       "name": "getRange",
       "scoped_name": "SculkCatalystBlockActor::getRange",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "unsigned int",
+      "visibility": "public"
     },
     {
       "symbol": "?getPortalWaitTime@Player@@UEBAHXZ",
@@ -1957,8 +1957,8 @@
       "name": "getPortalWaitTime",
       "scoped_name": "Player::getPortalWaitTime",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?canChangeDimensionsUsingPortal@ServerPlayer@@UEBA_NXZ",
@@ -1967,8 +1967,8 @@
       "name": "canChangeDimensionsUsingPortal",
       "scoped_name": "ServerPlayer::canChangeDimensionsUsingPortal",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -1989,8 +1989,8 @@
       "parameter_types": [
         "class AutomaticID<class Dimension,int>"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getControllingPlayer@ServerPlayer@@UEBA?AUActorUniqueID@@XZ",
@@ -1999,8 +1999,8 @@
       "name": "getControllingPlayer",
       "scoped_name": "ServerPlayer::getControllingPlayer",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "struct ActorUniqueID",
+      "visibility": "public"
     },
     {
       "symbol": "?checkFallDamage@ServerPlayer@@UEAAXM_N@Z",
@@ -2012,8 +2012,8 @@
         "float",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?causeFallDamage@Mob@@MEAAXMMVActorDamageSource@@@Z",
@@ -2026,8 +2026,8 @@
         "float",
         "class ActorDamageSource"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?handleFallDistanceOnServer@ServerPlayer@@UEAAXMM_N@Z",
@@ -2040,8 +2040,8 @@
         "float",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?playSynchronizedSound@Actor@@UEAAXW4LevelSoundEvent@@AEBVVec3@@H_N@Z",
@@ -2055,8 +2055,8 @@
         "int",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?playSynchronizedSound@Actor@@UEAAXW4LevelSoundEvent@@AEBVVec3@@AEBVBlock@@_N@Z",
@@ -2070,8 +2070,8 @@
         "class Block const &",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?onSynchedFlagUpdate@Actor@@UEAAXH_J0@Z",
@@ -2084,8 +2084,8 @@
         "__int64",
         "__int64"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?onSynchedDataUpdate@Horse@@UEAAXH@Z",
@@ -2096,8 +2096,8 @@
       "parameter_types": [
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?canAddPassenger@Player@@UEBA_NAEAVActor@@@Z",
@@ -2108,8 +2108,8 @@
       "parameter_types": [
         "class Actor &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VScriptAfterEvents@ScriptModuleMinecraft@@$00$MP812@EAAAEAV?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@2@XZH??$_getSignalByType@V?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@ScriptModuleMinecraft@@@12@AEAAAEAV32@XZA@@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -2129,7 +2129,7 @@
       "scoped_name": "Scripting::Reflection::MemberPropertyGetter<ScriptModuleMinecraft::MovementScriptActorComponent,0,&ScriptModuleMinecraft::MovementScriptActorComponent::`vcall'{8}'>::getReturnPolicy",
       "parameter_types": [],
       "return_type": "",
-      "visibility": ""
+      "visibility": "public"
     },
     {
       "symbol": "?inCaravan@Mob@@UEBA_NXZ",
@@ -2138,8 +2138,8 @@
       "name": "inCaravan",
       "scoped_name": "Mob::inCaravan",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VMovementScriptActorComponent@ScriptModuleMinecraft@@$0A@$MP812@EBA?AV?$Result@M@Scripting@@XZ1??_912@$B7AA@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -2149,7 +2149,7 @@
       "scoped_name": "Scripting::Reflection::MemberPropertyGetter<ScriptModuleMinecraft::MovementScriptActorComponent,0,&ScriptModuleMinecraft::MovementScriptActorComponent::`vcall'{8}'>::getReturnPolicy",
       "parameter_types": [],
       "return_type": "",
-      "visibility": ""
+      "visibility": "public"
     },
     {
       "symbol": "?tickLeash@Actor@@UEAAXXZ",
@@ -2158,8 +2158,8 @@
       "name": "tickLeash",
       "scoped_name": "Actor::tickLeash",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -2192,8 +2192,8 @@
         "bool",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?startSwimming@Player@@UEAAXXZ",
@@ -2202,8 +2202,8 @@
       "name": "startSwimming",
       "scoped_name": "Player::startSwimming",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?stopSwimming@Player@@UEAAXXZ",
@@ -2212,8 +2212,8 @@
       "name": "stopSwimming",
       "scoped_name": "Player::stopSwimming",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?buildDebugInfo@Mob@@UEBAXAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
@@ -2224,8 +2224,8 @@
       "parameter_types": [
         "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getCommandPermissionLevel@Player@@UEBA?AW4CommandPermissionLevel@@XZ",
@@ -2234,8 +2234,8 @@
       "name": "getCommandPermissionLevel",
       "scoped_name": "Player::getCommandPermissionLevel",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "enum CommandPermissionLevel",
+      "visibility": "public"
     },
     {
       "symbol": "?isClientSide@Actor@@UEBA_NXZ",
@@ -2244,8 +2244,8 @@
       "name": "isClientSide",
       "scoped_name": "Actor::isClientSide",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getMutableAttribute@Actor@@UEAAPEAVAttributeInstance@@AEBVAttribute@@@Z",
@@ -2256,8 +2256,8 @@
       "parameter_types": [
         "class Attribute const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class AttributeInstance *",
+      "visibility": "public"
     },
     {
       "symbol": "?getAttribute@Actor@@UEBAAEBVAttributeInstance@@AEBVAttribute@@@Z",
@@ -2268,8 +2268,8 @@
       "parameter_types": [
         "class Attribute const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class AttributeInstance const &",
+      "visibility": "public"
     },
     {
       "symbol": "?getDeathTime@Mob@@UEBAHXZ",
@@ -2278,8 +2278,8 @@
       "name": "getDeathTime",
       "scoped_name": "Mob::getDeathTime",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?heal@Actor@@UEAAXH@Z",
@@ -2290,8 +2290,8 @@
       "parameter_types": [
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?isInvertedHealAndHarm@Actor@@UEBA_NXZ",
@@ -2300,8 +2300,8 @@
       "name": "isInvertedHealAndHarm",
       "scoped_name": "Actor::isInvertedHealAndHarm",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?canBeAffected@Actor@@UEBA_NI@Z",
@@ -2312,8 +2312,8 @@
       "parameter_types": [
         "unsigned int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?canBeAffectedByArrow@Actor@@UEBA_NAEBVMobEffectInstance@@@Z",
@@ -2324,8 +2324,8 @@
       "parameter_types": [
         "class MobEffectInstance const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?onEffectAdded@ServerPlayer@@MEAAXAEAVMobEffectInstance@@@Z",
@@ -2336,8 +2336,8 @@
       "parameter_types": [
         "class MobEffectInstance &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?onEffectUpdated@ServerPlayer@@MEAAXAEAVMobEffectInstance@@@Z",
@@ -2348,8 +2348,8 @@
       "parameter_types": [
         "class MobEffectInstance &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?onEffectRemoved@ServerPlayer@@MEAAXAEAVMobEffectInstance@@@Z",
@@ -2360,8 +2360,8 @@
       "parameter_types": [
         "class MobEffectInstance &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?canObstructSpawningAndBlockPlacement@Player@@UEBA_NXZ",
@@ -2370,8 +2370,8 @@
       "name": "canObstructSpawningAndBlockPlacement",
       "scoped_name": "Player::canObstructSpawningAndBlockPlacement",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getAnimationComponent@Player@@UEAAAEAVAnimationComponent@@XZ",
@@ -2380,8 +2380,8 @@
       "name": "getAnimationComponent",
       "scoped_name": "Player::getAnimationComponent",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class AnimationComponent &",
+      "visibility": "public"
     },
     {
       "symbol": "?openContainerComponent@Actor@@UEAAXAEAVPlayer@@@Z",
@@ -2392,8 +2392,8 @@
       "parameter_types": [
         "class Player &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?swing@Mob@@UEAAXXZ",
@@ -2402,8 +2402,8 @@
       "name": "swing",
       "scoped_name": "Mob::swing",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?useItem@Player@@UEAAXAEAVItemStackBase@@W4ItemUseMethod@@_N@Z",
@@ -2416,8 +2416,8 @@
         "enum ItemUseMethod",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VMovementScriptActorComponent@ScriptModuleMinecraft@@$0A@$MP812@EBA?AV?$Result@M@Scripting@@XZ1??_912@$B7AA@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -2427,7 +2427,7 @@
       "scoped_name": "Scripting::Reflection::MemberPropertyGetter<ScriptModuleMinecraft::MovementScriptActorComponent,0,&ScriptModuleMinecraft::MovementScriptActorComponent::`vcall'{8}'>::getReturnPolicy",
       "parameter_types": [],
       "return_type": "",
-      "visibility": ""
+      "visibility": "public"
     },
     {
       "symbol": "?_Move@?$_Func_impl_no_alloc@V_lambda_e2a18d18c3433fe5e25ce5e26334638e_@@XAEAV?$JsonParseState@V?$JsonParseState@VEmptyClass@JsonUtil@@VHarvestFarmBlockDefinition@@@JsonUtil@@H@JsonUtil@@AEBH@std@@EEAAPEAV?$_Func_base@XAEAV?$JsonParseState@V?$JsonParseState@VEmptyClass@JsonUtil@@VHarvestFarmBlockDefinition@@@JsonUtil@@H@JsonUtil@@AEBH@2@PEAX@Z",
@@ -2439,7 +2439,7 @@
         "void *"
       ],
       "return_type": "",
-      "visibility": ""
+      "visibility": "private"
     },
     {
       "symbol": "?getDebugText@Actor@@UEAAXAEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@Z",
@@ -2450,8 +2450,8 @@
       "parameter_types": [
         "class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getMapDecorationRotation@Player@@UEBAMXZ",
@@ -2460,8 +2460,8 @@
       "name": "getMapDecorationRotation",
       "scoped_name": "Player::getMapDecorationRotation",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getPassengerYRotation@Actor@@UEBAMAEBV1@@Z",
@@ -2472,8 +2472,8 @@
       "parameter_types": [
         "class Actor const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?add@Player@@UEAA_NAEAVItemStack@@@Z",
@@ -2484,8 +2484,8 @@
       "parameter_types": [
         "class ItemStack &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?drop@Player@@UEAA_NAEBVItemStack@@_N@Z",
@@ -2497,8 +2497,8 @@
         "class ItemStack const &",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getInteraction@Actor@@UEAA_NAEAVPlayer@@AEAVActorInteraction@@AEBVVec3@@@Z",
@@ -2511,8 +2511,8 @@
         "class ActorInteraction &",
         "class Vec3 const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VScriptAfterEvents@ScriptModuleMinecraft@@$00$MP812@EAAAEAV?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@2@XZH??$_getSignalByType@V?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@ScriptModuleMinecraft@@@12@AEAAAEAV32@XZA@@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -2544,8 +2544,8 @@
         "float",
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?onOrphan@Actor@@UEAAXXZ",
@@ -2554,8 +2554,8 @@
       "name": "onOrphan",
       "scoped_name": "Actor::onOrphan",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?wobble@Actor@@UEAAXXZ",
@@ -2564,8 +2564,8 @@
       "name": "wobble",
       "scoped_name": "Actor::wobble",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?wasHurt@Actor@@UEAA_NXZ",
@@ -2574,8 +2574,8 @@
       "name": "wasHurt",
       "scoped_name": "Actor::wasHurt",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?startSpinAttack@Player@@UEAAXXZ",
@@ -2584,8 +2584,8 @@
       "name": "startSpinAttack",
       "scoped_name": "Player::startSpinAttack",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?stopSpinAttack@Player@@UEAAXXZ",
@@ -2594,8 +2594,8 @@
       "name": "stopSpinAttack",
       "scoped_name": "Player::stopSpinAttack",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?setDamageNearbyMobs@Actor@@UEAAX_N@Z",
@@ -2606,8 +2606,8 @@
       "parameter_types": [
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -2628,8 +2628,8 @@
       "parameter_types": [
         "struct EquipmentTableDefinition const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?reloadLootTable@Actor@@UEAAXXZ",
@@ -2638,8 +2638,8 @@
       "name": "reloadLootTable",
       "scoped_name": "Actor::reloadLootTable",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getShadowHeightOffs@Fireball@@UEAAMXZ",
@@ -2648,8 +2648,8 @@
       "name": "getShadowHeightOffs",
       "scoped_name": "Fireball::getShadowHeightOffs",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?kill@Mob@@UEAAXXZ",
@@ -2658,8 +2658,8 @@
       "name": "kill",
       "scoped_name": "Mob::kill",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?die@ServerPlayer@@UEAAXAEBVActorDamageSource@@@Z",
@@ -2670,8 +2670,8 @@
       "parameter_types": [
         "class ActorDamageSource const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?shouldDropDeathLoot@Player@@UEBA_NXZ",
@@ -2680,8 +2680,8 @@
       "name": "shouldDropDeathLoot",
       "scoped_name": "Player::shouldDropDeathLoot",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?shouldTick@Actor@@UEBA_NXZ",
@@ -2690,8 +2690,8 @@
       "name": "shouldTick",
       "scoped_name": "Actor::shouldTick",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?applySnapshot@Actor@@UEAAXAEBVEntityContext@@0@Z",
@@ -2703,8 +2703,8 @@
         "class EntityContext const &",
         "class EntityContext const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getNextStep@Actor@@UEAAMM@Z",
@@ -2715,8 +2715,8 @@
       "parameter_types": [
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getLootTable@Actor@@UEAAPEAVLootTable@@XZ",
@@ -2725,8 +2725,8 @@
       "name": "getLootTable",
       "scoped_name": "Actor::getLootTable",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class LootTable *",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -2745,8 +2745,8 @@
       "name": "getLastDeathPos",
       "scoped_name": "Player::getLastDeathPos",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::optional<class BlockPos>",
+      "visibility": "public"
     },
     {
       "symbol": "?getLastDeathDimension@Player@@UEBA?AV?$optional@V?$AutomaticID@VDimension@@H@@@std@@XZ",
@@ -2755,8 +2755,8 @@
       "name": "getLastDeathDimension",
       "scoped_name": "Player::getLastDeathDimension",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::optional<class AutomaticID<class Dimension,int> >",
+      "visibility": "public"
     },
     {
       "symbol": "?hasDiedBefore@Player@@UEBA_NXZ",
@@ -2765,8 +2765,8 @@
       "name": "hasDiedBefore",
       "scoped_name": "Player::hasDiedBefore",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?doWaterSplashEffect@Actor@@UEAAXXZ",
@@ -2775,8 +2775,8 @@
       "name": "doWaterSplashEffect",
       "scoped_name": "Actor::doWaterSplashEffect",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VMovementScriptActorComponent@ScriptModuleMinecraft@@$0A@$MP812@EBA?AV?$Result@M@Scripting@@XZ1??_912@$B7AA@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -2786,7 +2786,7 @@
       "scoped_name": "Scripting::Reflection::MemberPropertyGetter<ScriptModuleMinecraft::MovementScriptActorComponent,0,&ScriptModuleMinecraft::MovementScriptActorComponent::`vcall'{8}'>::getReturnPolicy",
       "parameter_types": [],
       "return_type": "",
-      "visibility": ""
+      "visibility": "public"
     },
     {
       "symbol": "?_shouldProvideFeedbackOnArmorSet@Player@@MEBA_NW4ArmorSlot@@AEBVItemStack@@@Z",
@@ -2798,8 +2798,8 @@
         "enum ArmorSlot",
         "class ItemStack const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "protected"
     },
     {
       "symbol": "?updateEntitySpecificMolangVariables@Mob@@MEAAXAEAVRenderParams@@@Z",
@@ -2810,8 +2810,8 @@
       "parameter_types": [
         "class RenderParams &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?shouldTryMakeStepSound@Actor@@MEAA_NXZ",
@@ -2820,8 +2820,8 @@
       "name": "shouldTryMakeStepSound",
       "scoped_name": "Actor::shouldTryMakeStepSound",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "protected"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VScriptAfterEvents@ScriptModuleMinecraft@@$00$MP812@EAAAEAV?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@2@XZH??$_getSignalByType@V?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@ScriptModuleMinecraft@@@12@AEAAAEAV32@XZA@@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -2845,8 +2845,8 @@
         "bool",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "protected"
     },
     {
       "symbol": "?markHurt@Actor@@MEAAXXZ",
@@ -2855,8 +2855,8 @@
       "name": "markHurt",
       "scoped_name": "Actor::markHurt",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?_getAnimationComponent@Actor@@MEAAAEAVAnimationComponent@@AEAV?$shared_ptr@VAnimationComponent@@@std@@W4AnimationComponentGroupType@@@Z",
@@ -2868,8 +2868,8 @@
         "class std::shared_ptr<class AnimationComponent> &",
         "enum AnimationComponentGroupType"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class AnimationComponent &",
+      "visibility": "protected"
     },
     {
       "symbol": "?readAdditionalSaveData@Player@@MEAAXAEBVCompoundTag@@AEAVDataLoadHelper@@@Z",
@@ -2881,8 +2881,8 @@
         "class CompoundTag const &",
         "class DataLoadHelper &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?addAdditionalSaveData@Player@@MEBAXAEAVCompoundTag@@@Z",
@@ -2893,8 +2893,8 @@
       "parameter_types": [
         "class CompoundTag &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?_playStepSound@Mob@@MEAAXAEBVBlockPos@@AEBVBlock@@@Z",
@@ -2906,8 +2906,8 @@
         "class BlockPos const &",
         "class Block const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?_playFlySound@Actor@@MEAAXAEBVBlockPos@@AEBVBlock@@@Z",
@@ -2919,8 +2919,8 @@
         "class BlockPos const &",
         "class Block const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VMovementScriptActorComponent@ScriptModuleMinecraft@@$0A@$MP812@EBA?AV?$Result@M@Scripting@@XZ1??_912@$B7AA@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -2930,7 +2930,7 @@
       "scoped_name": "Scripting::Reflection::MemberPropertyGetter<ScriptModuleMinecraft::MovementScriptActorComponent,0,&ScriptModuleMinecraft::MovementScriptActorComponent::`vcall'{8}'>::getReturnPolicy",
       "parameter_types": [],
       "return_type": "",
-      "visibility": ""
+      "visibility": "public"
     },
     {
       "symbol": "?checkInsideBlocks@Actor@@MEAAXM@Z",
@@ -2941,8 +2941,8 @@
       "parameter_types": [
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?pushOutOfBlocks@Actor@@MEAAXAEBVVec3@@@Z",
@@ -2953,8 +2953,8 @@
       "parameter_types": [
         "class Vec3 const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?spawnTrailBubbles@Actor@@MEAAXXZ",
@@ -2963,8 +2963,8 @@
       "name": "spawnTrailBubbles",
       "scoped_name": "Actor::spawnTrailBubbles",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?updateInsideBlock@Actor@@MEAAXXZ",
@@ -2973,8 +2973,8 @@
       "name": "updateInsideBlock",
       "scoped_name": "Actor::updateInsideBlock",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?_removePassenger@Mob@@MEAAXAEBUActorUniqueID@@_N11@Z",
@@ -2988,8 +2988,8 @@
         "bool",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?_onSizeUpdated@Player@@EEAAXXZ",
@@ -2998,8 +2998,8 @@
       "name": "_onSizeUpdated",
       "scoped_name": "Player::_onSizeUpdated",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "private"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -3026,8 +3026,8 @@
         "float",
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -3048,8 +3048,8 @@
       "parameter_types": [
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getHurtSound@Mob@@UEAA?AW4LevelSoundEvent@@XZ",
@@ -3058,8 +3058,8 @@
       "name": "getHurtSound",
       "scoped_name": "Mob::getHurtSound",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "enum LevelSoundEvent",
+      "visibility": "public"
     },
     {
       "symbol": "?getDeathSound@Mob@@UEAA?AW4LevelSoundEvent@@XZ",
@@ -3068,8 +3068,8 @@
       "name": "getDeathSound",
       "scoped_name": "Mob::getDeathSound",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "enum LevelSoundEvent",
+      "visibility": "public"
     },
     {
       "symbol": "?getSpeed@Player@@UEBAMXZ",
@@ -3078,8 +3078,8 @@
       "name": "getSpeed",
       "scoped_name": "Player::getSpeed",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?setSpeed@Player@@UEAAXM@Z",
@@ -3090,8 +3090,8 @@
       "parameter_types": [
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?hurtEffects@Mob@@UEAAXAEBVActorDamageSource@@M_N1@Z",
@@ -3105,8 +3105,8 @@
         "bool",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getMeleeWeaponDamageBonus@Mob@@UEAAMPEAV1@@Z",
@@ -3117,8 +3117,8 @@
       "parameter_types": [
         "class Mob *"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getMeleeKnockbackBonus@Mob@@UEAAHXZ",
@@ -3127,8 +3127,8 @@
       "name": "getMeleeKnockbackBonus",
       "scoped_name": "Mob::getMeleeKnockbackBonus",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?travel@Player@@UEAAXMMM_N@Z",
@@ -3142,8 +3142,8 @@
         "float",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?applyFinalFriction@Mob@@UEAAXM_N@Z",
@@ -3155,8 +3155,8 @@
         "float",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?aiStep@Player@@UEBAXAEAUIMobMovementProxy@@@Z",
@@ -3167,8 +3167,8 @@
       "parameter_types": [
         "struct IMobMovementProxy &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?aiStep@ServerPlayer@@UEAAXXZ",
@@ -3177,8 +3177,8 @@
       "name": "aiStep",
       "scoped_name": "ServerPlayer::aiStep",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?pushActors@Mob@@UEAAXXZ",
@@ -3187,8 +3187,8 @@
       "name": "pushActors",
       "scoped_name": "Mob::pushActors",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?lookAt@Mob@@UEAAXPEAVActor@@MM@Z",
@@ -3201,8 +3201,8 @@
         "float",
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?isLookingAtAnEntity@Mob@@UEAA_NXZ",
@@ -3211,8 +3211,8 @@
       "name": "isLookingAtAnEntity",
       "scoped_name": "Mob::isLookingAtAnEntity",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?checkSpawnRules@Mob@@UEAA_N_N@Z",
@@ -3223,8 +3223,8 @@
       "parameter_types": [
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?checkSpawnObstruction@Mob@@UEBA_NXZ",
@@ -3233,8 +3233,8 @@
       "name": "checkSpawnObstruction",
       "scoped_name": "Mob::checkSpawnObstruction",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getAttackAnim@Mob@@UEAAMM@Z",
@@ -3245,8 +3245,8 @@
       "parameter_types": [
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getItemUseDuration@Player@@UEBAHXZ",
@@ -3255,8 +3255,8 @@
       "name": "getItemUseDuration",
       "scoped_name": "Player::getItemUseDuration",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?getItemUseStartupProgress@Player@@UEBAMXZ",
@@ -3265,8 +3265,8 @@
       "name": "getItemUseStartupProgress",
       "scoped_name": "Player::getItemUseStartupProgress",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getItemUseIntervalProgress@Player@@UEBAMXZ",
@@ -3275,8 +3275,8 @@
       "name": "getItemUseIntervalProgress",
       "scoped_name": "Player::getItemUseIntervalProgress",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getItemUseIntervalAxis@Mob@@UEBAHXZ",
@@ -3285,8 +3285,8 @@
       "name": "getItemUseIntervalAxis",
       "scoped_name": "Mob::getItemUseIntervalAxis",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?getTimeAlongSwing@Mob@@UEBAHXZ",
@@ -3295,8 +3295,8 @@
       "name": "getTimeAlongSwing",
       "scoped_name": "Mob::getTimeAlongSwing",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -3315,8 +3315,8 @@
       "name": "getMaxHeadXRot",
       "scoped_name": "Mob::getMaxHeadXRot",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VMovementScriptActorComponent@ScriptModuleMinecraft@@$0A@$MP812@EBA?AV?$Result@M@Scripting@@XZ1??_912@$B7AA@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -3326,7 +3326,7 @@
       "scoped_name": "Scripting::Reflection::MemberPropertyGetter<ScriptModuleMinecraft::MovementScriptActorComponent,0,&ScriptModuleMinecraft::MovementScriptActorComponent::`vcall'{8}'>::getReturnPolicy",
       "parameter_types": [],
       "return_type": "",
-      "visibility": ""
+      "visibility": "public"
     },
     {
       "symbol": "?doHurtTarget@Mob@@UEAA_NPEAVActor@@AEBW4ActorDamageCause@@@Z",
@@ -3338,8 +3338,8 @@
         "class Actor *",
         "enum ActorDamageCause const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VMovementScriptActorComponent@ScriptModuleMinecraft@@$0A@$MP812@EBA?AV?$Result@M@Scripting@@XZ1??_912@$B7AA@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -3349,7 +3349,7 @@
       "scoped_name": "Scripting::Reflection::MemberPropertyGetter<ScriptModuleMinecraft::MovementScriptActorComponent,0,&ScriptModuleMinecraft::MovementScriptActorComponent::`vcall'{8}'>::getReturnPolicy",
       "parameter_types": [],
       "return_type": "",
-      "visibility": ""
+      "visibility": "public"
     },
     {
       "symbol": "?leaveCaravan@Mob@@UEAAXXZ",
@@ -3358,8 +3358,8 @@
       "name": "leaveCaravan",
       "scoped_name": "Mob::leaveCaravan",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?joinCaravan@Mob@@UEAAXPEAV1@@Z",
@@ -3370,8 +3370,8 @@
       "parameter_types": [
         "class Mob *"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?hasCaravanTail@Mob@@UEBA_NXZ",
@@ -3380,8 +3380,8 @@
       "name": "hasCaravanTail",
       "scoped_name": "Mob::hasCaravanTail",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getCaravanHead@Mob@@UEBA?AUActorUniqueID@@XZ",
@@ -3390,8 +3390,8 @@
       "name": "getCaravanHead",
       "scoped_name": "Mob::getCaravanHead",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "struct ActorUniqueID",
+      "visibility": "public"
     },
     {
       "symbol": "?getArmorValue@Mob@@UEBAHXZ",
@@ -3400,8 +3400,8 @@
       "name": "getArmorValue",
       "scoped_name": "Mob::getArmorValue",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?getArmorCoverPercentage@Mob@@UEBAMXZ",
@@ -3410,8 +3410,8 @@
       "name": "getArmorCoverPercentage",
       "scoped_name": "Mob::getArmorCoverPercentage",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getToughnessValue@Mob@@UEBAHXZ",
@@ -3420,8 +3420,8 @@
       "name": "getToughnessValue",
       "scoped_name": "Mob::getToughnessValue",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?hurtArmorSlots@ServerPlayer@@UEAAXAEBVActorDamageSource@@HV?$bitset@$03@std@@@Z",
@@ -3434,8 +3434,8 @@
         "int",
         "class std::bitset<4>"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?setDamagedArmor@ServerPlayer@@UEAAXW4ArmorSlot@@AEBVItemStack@@@Z",
@@ -3447,8 +3447,8 @@
         "enum ArmorSlot",
         "class ItemStack const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?sendArmorDamage@ServerPlayer@@UEAAXV?$bitset@$03@std@@@Z",
@@ -3459,8 +3459,8 @@
       "parameter_types": [
         "class std::bitset<4>"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?sendArmor@ServerPlayer@@UEAAXV?$bitset@$03@std@@@Z",
@@ -3471,8 +3471,8 @@
       "parameter_types": [
         "class std::bitset<4>"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?containerChanged@Mob@@UEAAXH@Z",
@@ -3483,8 +3483,8 @@
       "parameter_types": [
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?updateEquipment@Mob@@UEAAXXZ",
@@ -3493,8 +3493,8 @@
       "name": "updateEquipment",
       "scoped_name": "Mob::updateEquipment",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?clearEquipment@Mob@@UEAAHXZ",
@@ -3503,8 +3503,8 @@
       "name": "clearEquipment",
       "scoped_name": "Mob::clearEquipment",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?getAllArmorID@Mob@@UEBA?AV?$vector@HV?$allocator@H@std@@@std@@XZ",
@@ -3513,8 +3513,8 @@
       "name": "getAllArmorID",
       "scoped_name": "Mob::getAllArmorID",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::vector<int,class std::allocator<int> >",
+      "visibility": "public"
     },
     {
       "symbol": "?getAllHand@Player@@UEBA?AV?$vector@PEBVItemStack@@V?$allocator@PEBVItemStack@@@std@@@std@@XZ",
@@ -3523,8 +3523,8 @@
       "name": "getAllHand",
       "scoped_name": "Player::getAllHand",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::vector<class ItemStack const *,class std::allocator<class ItemStack const *> >",
+      "visibility": "public"
     },
     {
       "symbol": "?getAllEquipment@Player@@UEBA?AV?$vector@PEBVItemStack@@V?$allocator@PEBVItemStack@@@std@@@std@@XZ",
@@ -3533,8 +3533,8 @@
       "name": "getAllEquipment",
       "scoped_name": "Player::getAllEquipment",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::vector<class ItemStack const *,class std::allocator<class ItemStack const *> >",
+      "visibility": "public"
     },
     {
       "symbol": "?getArmorTypeHash@Mob@@UEAAHXZ",
@@ -3543,8 +3543,8 @@
       "name": "getArmorTypeHash",
       "scoped_name": "Mob::getArmorTypeHash",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?dropEquipmentOnDeath@Player@@UEAAXXZ",
@@ -3553,8 +3553,8 @@
       "name": "dropEquipmentOnDeath",
       "scoped_name": "Player::dropEquipmentOnDeath",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?dropEquipmentOnDeath@Player@@UEAAXAEBVActorDamageSource@@H@Z",
@@ -3566,8 +3566,8 @@
         "class ActorDamageSource const &",
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?clearVanishEnchantedItemsOnDeath@ServerPlayer@@UEAAXXZ",
@@ -3576,8 +3576,8 @@
       "name": "clearVanishEnchantedItemsOnDeath",
       "scoped_name": "ServerPlayer::clearVanishEnchantedItemsOnDeath",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?sendInventory@ServerPlayer@@UEAAX_N@Z",
@@ -3588,8 +3588,8 @@
       "parameter_types": [
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getDamageAfterEnchantReduction@Mob@@UEBAMAEBVActorDamageSource@@M@Z",
@@ -3601,8 +3601,8 @@
         "class ActorDamageSource const &",
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getDamageAfterArmorReduction@Mob@@UEBAMAEBVActorDamageSource@@M@Z",
@@ -3614,8 +3614,8 @@
         "class ActorDamageSource const &",
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getDamageAfterResistanceEffect@Mob@@UEBAMAEBVActorDamageSource@@M@Z",
@@ -3627,8 +3627,8 @@
         "class ActorDamageSource const &",
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?createAIGoals@Mob@@UEAA_NXZ",
@@ -3637,8 +3637,8 @@
       "name": "createAIGoals",
       "scoped_name": "Mob::createAIGoals",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -3660,8 +3660,8 @@
         "enum EquipmentSlot",
         "class ItemStack const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?setTransitioningSitting@Mob@@UEAAX_N@Z",
@@ -3672,8 +3672,8 @@
       "parameter_types": [
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?attackAnimation@Mob@@UEAAXPEAVActor@@M@Z",
@@ -3685,8 +3685,8 @@
         "class Actor *",
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getTickDelay@BasePressurePlateBlock@@UEBAHXZ",
@@ -3695,8 +3695,8 @@
       "name": "getTickDelay",
       "scoped_name": "BasePressurePlateBlock::getTickDelay",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?getShadowHeightOffs@Fireball@@UEAAMXZ",
@@ -3705,8 +3705,8 @@
       "name": "getShadowHeightOffs",
       "scoped_name": "Fireball::getShadowHeightOffs",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "float",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VScriptAfterEvents@ScriptModuleMinecraft@@$00$MP812@EAAAEAV?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@2@XZH??$_getSignalByType@V?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@ScriptModuleMinecraft@@@12@AEAAAEAV32@XZA@@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -3725,8 +3725,8 @@
       "name": "ascendLadder",
       "scoped_name": "Mob::ascendLadder",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?ascendBlockByJumping@Mob@@UEAAXXZ",
@@ -3735,8 +3735,8 @@
       "name": "ascendBlockByJumping",
       "scoped_name": "Mob::ascendBlockByJumping",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?descendBlockByCrouching@Mob@@UEAAXXZ",
@@ -3745,8 +3745,8 @@
       "name": "descendBlockByCrouching",
       "scoped_name": "Mob::descendBlockByCrouching",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?dropContainer@Mob@@UEAAXXZ",
@@ -3755,8 +3755,8 @@
       "name": "dropContainer",
       "scoped_name": "Mob::dropContainer",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?initBodyControl@Player@@EEAA?AV?$unique_ptr@VBodyControl@@U?$default_delete@VBodyControl@@@std@@@std@@XZ",
@@ -3765,8 +3765,8 @@
       "name": "initBodyControl",
       "scoped_name": "Player::initBodyControl",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::unique_ptr<class BodyControl,struct std::default_delete<class BodyControl> >",
+      "visibility": "private"
     },
     {
       "symbol": "?jumpFromGround@Player@@UEBAXAEAUIMobMovementProxy@@AEBVIConstBlockSource@@@Z",
@@ -3778,8 +3778,8 @@
         "struct IMobMovementProxy &",
         "class IConstBlockSource const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?jumpFromGround@Player@@UEAAXAEBVIConstBlockSource@@@Z",
@@ -3790,8 +3790,8 @@
       "parameter_types": [
         "class IConstBlockSource const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?newServerAiStep@Mob@@MEAAXXZ",
@@ -3800,8 +3800,8 @@
       "name": "newServerAiStep",
       "scoped_name": "Mob::newServerAiStep",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -3820,8 +3820,8 @@
       "name": "dropBags",
       "scoped_name": "Mob::dropBags",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?tickDeath@Mob@@MEAAXXZ",
@@ -3830,8 +3830,8 @@
       "name": "tickDeath",
       "scoped_name": "Mob::tickDeath",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?updateGliding@Player@@MEAAXXZ",
@@ -3840,8 +3840,8 @@
       "name": "updateGliding",
       "scoped_name": "Player::updateGliding",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VScriptAfterEvents@ScriptModuleMinecraft@@$00$MP812@EAAAEAV?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@2@XZH??$_getSignalByType@V?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@ScriptModuleMinecraft@@@12@AEAAAEAV32@XZA@@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -3863,8 +3863,8 @@
         "class AABB const &",
         "class Vec3 const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class AABB",
+      "visibility": "protected"
     },
     {
       "symbol": "?prepareRegion@ServerPlayer@@UEAAXAEAVChunkSource@@@Z",
@@ -3875,8 +3875,8 @@
       "parameter_types": [
         "class ChunkSource &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?destroyRegion@ServerPlayer@@UEAAXXZ",
@@ -3885,8 +3885,8 @@
       "name": "destroyRegion",
       "scoped_name": "ServerPlayer::destroyRegion",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?suspendRegion@Player@@UEAAXXZ",
@@ -3895,8 +3895,8 @@
       "name": "suspendRegion",
       "scoped_name": "Player::suspendRegion",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?resendAllChunks@Player@@UEAAXXZ",
@@ -3905,8 +3905,8 @@
       "name": "resendAllChunks",
       "scoped_name": "Player::resendAllChunks",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?_fireWillChangeDimension@Player@@UEAAXXZ",
@@ -3915,8 +3915,8 @@
       "name": "_fireWillChangeDimension",
       "scoped_name": "Player::_fireWillChangeDimension",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?_fireDimensionChanged@Player@@UEAAXXZ",
@@ -3925,8 +3925,8 @@
       "name": "_fireDimensionChanged",
       "scoped_name": "Player::_fireDimensionChanged",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?changeDimensionWithCredits@ServerPlayer@@UEAAXV?$AutomaticID@VDimension@@H@@@Z",
@@ -3937,8 +3937,8 @@
       "parameter_types": [
         "class AutomaticID<class Dimension,int>"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?tickWorld@ServerPlayer@@UEAAXAEBUTick@@@Z",
@@ -3949,8 +3949,8 @@
       "parameter_types": [
         "struct Tick const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -3969,8 +3969,8 @@
       "name": "getTickingOffsets",
       "scoped_name": "Player::getTickingOffsets",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::vector<class ChunkPos,class std::allocator<class ChunkPos> > const &",
+      "visibility": "public"
     },
     {
       "symbol": "?moveView@ServerPlayer@@UEAAXXZ",
@@ -3979,8 +3979,8 @@
       "name": "moveView",
       "scoped_name": "ServerPlayer::moveView",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?moveSpawnView@ServerPlayer@@UEAAXAEBVVec3@@V?$AutomaticID@VDimension@@H@@@Z",
@@ -3992,8 +3992,8 @@
         "class Vec3 const &",
         "class AutomaticID<class Dimension,int>"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?setName@Player@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
@@ -4004,8 +4004,8 @@
       "parameter_types": [
         "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getTravelledMethod@Player@@UEBA?AW4TravelMethod@@XZ",
@@ -4014,8 +4014,8 @@
       "name": "getTravelledMethod",
       "scoped_name": "Player::getTravelledMethod",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "enum TravelMethod",
+      "visibility": "public"
     },
     {
       "symbol": "?checkMovementStats@ServerPlayer@@UEAAXAEBVVec3@@@Z",
@@ -4026,8 +4026,8 @@
       "parameter_types": [
         "class Vec3 const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VMovementScriptActorComponent@ScriptModuleMinecraft@@$0A@$MP812@EBA?AV?$Result@M@Scripting@@XZ1??_912@$B7AA@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -4037,7 +4037,7 @@
       "scoped_name": "Scripting::Reflection::MemberPropertyGetter<ScriptModuleMinecraft::MovementScriptActorComponent,0,&ScriptModuleMinecraft::MovementScriptActorComponent::`vcall'{8}'>::getReturnPolicy",
       "parameter_types": [],
       "return_type": "",
-      "visibility": ""
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VScriptAfterEvents@ScriptModuleMinecraft@@$00$MP812@EAAAEAV?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@2@XZH??$_getSignalByType@V?$ScriptEventSignalAsync@V?$StrongTypedObjectHandle@UScriptLeverActionAfterEvent@ScriptModuleMinecraft@@@Scripting@@@ScriptModuleMinecraft@@@12@AEAAAEAV32@XZA@@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -4056,8 +4056,8 @@
       "name": "respawn",
       "scoped_name": "ServerPlayer::respawn",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -4077,7 +4077,7 @@
       "scoped_name": "Scripting::Reflection::MemberPropertyGetter<ScriptModuleMinecraft::MovementScriptActorComponent,0,&ScriptModuleMinecraft::MovementScriptActorComponent::`vcall'{8}'>::getReturnPolicy",
       "parameter_types": [],
       "return_type": "",
-      "visibility": ""
+      "visibility": "public"
     },
     {
       "symbol": "?hasResource@Player@@UEAA_NH@Z",
@@ -4088,8 +4088,8 @@
       "parameter_types": [
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?completeUsingItem@Player@@UEAAXXZ",
@@ -4098,8 +4098,8 @@
       "name": "completeUsingItem",
       "scoped_name": "Player::completeUsingItem",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?startDestroying@Player@@UEAAXXZ",
@@ -4108,8 +4108,8 @@
       "name": "startDestroying",
       "scoped_name": "Player::startDestroying",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?stopDestroying@Player@@UEAAXXZ",
@@ -4118,8 +4118,8 @@
       "name": "stopDestroying",
       "scoped_name": "Player::stopDestroying",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -4151,8 +4151,8 @@
         "struct ActorUniqueID const &",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?canOpenContainerScreen@Player@@UEAA_NXZ",
@@ -4161,8 +4161,8 @@
       "name": "canOpenContainerScreen",
       "scoped_name": "Player::canOpenContainerScreen",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -4183,8 +4183,8 @@
       "parameter_types": [
         "class std::shared_ptr<class BackgroundTaskBase>"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?openInventory@ServerPlayer@@UEAAXXZ",
@@ -4193,8 +4193,8 @@
       "name": "openInventory",
       "scoped_name": "ServerPlayer::openInventory",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -4227,8 +4227,8 @@
         "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &",
         "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?displayTextObjectWhisperMessage@ServerPlayer@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00@Z",
@@ -4241,8 +4241,8 @@
         "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &",
         "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?displayTextObjectWhisperMessage@ServerPlayer@@UEAAXAEBVResolvedTextObject@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1@Z",
@@ -4255,8 +4255,8 @@
         "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &",
         "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?displayWhisperMessage@ServerPlayer@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@000@Z",
@@ -4270,8 +4270,8 @@
         "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &",
         "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?startSleepInBed@Player@@UEAA?AW4BedSleepingResult@@AEBVBlockPos@@@Z",
@@ -4282,8 +4282,8 @@
       "parameter_types": [
         "class BlockPos const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "enum BedSleepingResult",
+      "visibility": "public"
     },
     {
       "symbol": "?stopSleepInBed@ServerPlayer@@UEAAX_N0@Z",
@@ -4295,8 +4295,8 @@
         "bool",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?canStartSleepInBed@Player@@UEAA_NXZ",
@@ -4305,8 +4305,8 @@
       "name": "canStartSleepInBed",
       "scoped_name": "Player::canStartSleepInBed",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?getSleepTimer@Player@@UEBAHXZ",
@@ -4315,8 +4315,8 @@
       "name": "getSleepTimer",
       "scoped_name": "Player::getSleepTimer",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?getPreviousTickSleepTimer@Player@@UEBAHXZ",
@@ -4325,8 +4325,8 @@
       "name": "getPreviousTickSleepTimer",
       "scoped_name": "Player::getPreviousTickSleepTimer",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?openSign@ServerPlayer@@UEAAXAEBVBlockPos@@_N@Z",
@@ -4338,8 +4338,8 @@
         "class BlockPos const &",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -4358,8 +4358,8 @@
       "name": "isHostingPlayer",
       "scoped_name": "ServerPlayer::isHostingPlayer",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?isLoading@ServerPlayer@@UEBA_NXZ",
@@ -4368,8 +4368,8 @@
       "name": "isLoading",
       "scoped_name": "ServerPlayer::isLoading",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?isPlayerInitialized@ServerPlayer@@UEBA_NXZ",
@@ -4378,8 +4378,8 @@
       "name": "isPlayerInitialized",
       "scoped_name": "ServerPlayer::isPlayerInitialized",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -4400,8 +4400,8 @@
       "parameter_types": [
         "struct ActorUniqueID"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?unRegisterTrackedBoss@Player@@UEAAXUActorUniqueID@@@Z",
@@ -4412,8 +4412,8 @@
       "parameter_types": [
         "struct ActorUniqueID"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?setPlayerGameType@ServerPlayer@@UEAAXW4GameType@@@Z",
@@ -4424,8 +4424,8 @@
       "parameter_types": [
         "enum GameType"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?initHUDContainerManager@Player@@UEAAXXZ",
@@ -4434,8 +4434,8 @@
       "name": "initHUDContainerManager",
       "scoped_name": "Player::initHUDContainerManager",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?_crit@Player@@UEAAXAEAVActor@@@Z",
@@ -4446,8 +4446,8 @@
       "parameter_types": [
         "class Actor &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getEventing@Player@@UEBAPEAVIMinecraftEventing@@XZ",
@@ -4456,8 +4456,8 @@
       "name": "getEventing",
       "scoped_name": "Player::getEventing",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class IMinecraftEventing *",
+      "visibility": "public"
     },
     {
       "symbol": "?_Move@?$_Func_impl_no_alloc@V_lambda_e2a18d18c3433fe5e25ce5e26334638e_@@XAEAV?$JsonParseState@V?$JsonParseState@VEmptyClass@JsonUtil@@VHarvestFarmBlockDefinition@@@JsonUtil@@H@JsonUtil@@AEBH@std@@EEAAPEAV?$_Func_base@XAEAV?$JsonParseState@V?$JsonParseState@VEmptyClass@JsonUtil@@VHarvestFarmBlockDefinition@@@JsonUtil@@H@JsonUtil@@AEBH@2@PEAX@Z",
@@ -4469,7 +4469,7 @@
         "void *"
       ],
       "return_type": "",
-      "visibility": ""
+      "visibility": "private"
     },
     {
       "symbol": "?sendEventPacket@Player@@UEBAXAEAVEventPacket@@@Z",
@@ -4480,8 +4480,8 @@
       "parameter_types": [
         "class EventPacket &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?addExperience@Player@@UEAAXH@Z",
@@ -4492,8 +4492,8 @@
       "parameter_types": [
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?addLevels@Player@@UEAAXH@Z",
@@ -4504,8 +4504,8 @@
       "parameter_types": [
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?setContainerData@ServerPlayer@@UEAAXAEAVIContainerManager@@HH@Z",
@@ -4518,8 +4518,8 @@
         "int",
         "int"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?slotChanged@ServerPlayer@@UEAAXAEAVIContainerManager@@AEAVContainer@@HAEBVItemStack@@2_N@Z",
@@ -4535,8 +4535,8 @@
         "class ItemStack const &",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?inventoryChanged@Player@@UEAAXAEAVContainer@@HAEBVItemStack@@1_N@Z",
@@ -4551,8 +4551,8 @@
         "class ItemStack const &",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?refreshContainer@ServerPlayer@@UEAAXAEAVIContainerManager@@@Z",
@@ -4563,8 +4563,8 @@
       "parameter_types": [
         "class IContainerManager &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?deleteContainerManager@Player@@UEAAXXZ",
@@ -4573,8 +4573,8 @@
       "name": "deleteContainerManager",
       "scoped_name": "Player::deleteContainerManager",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?isActorRelevant@ServerPlayer@@UEAA_NAEBVActor@@@Z",
@@ -4585,8 +4585,8 @@
       "parameter_types": [
         "class Actor const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?isTeacher@ServerPlayer@@UEBA_NXZ",
@@ -4595,8 +4595,8 @@
       "name": "isTeacher",
       "scoped_name": "ServerPlayer::isTeacher",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?onSuspension@ServerPlayer@@UEAAXXZ",
@@ -4605,8 +4605,8 @@
       "name": "onSuspension",
       "scoped_name": "ServerPlayer::onSuspension",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?onLinkedSlotsChanged@ServerPlayer@@UEAAXXZ",
@@ -4615,8 +4615,8 @@
       "name": "onLinkedSlotsChanged",
       "scoped_name": "ServerPlayer::onLinkedSlotsChanged",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?startCooldown@Player@@UEAAXPEBVItem@@_N@Z",
@@ -4628,8 +4628,8 @@
         "class Item const *",
         "bool"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getItemCooldownLeft@Player@@UEBAH_K@Z",
@@ -4640,8 +4640,8 @@
       "parameter_types": [
         "unsigned __int64"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?getItemCooldownLeft@Player@@UEBAHAEBVHashedString@@@Z",
@@ -4652,8 +4652,8 @@
       "parameter_types": [
         "class HashedString const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?getMaxItemCooldownLeft@Player@@UEBAHXZ",
@@ -4662,8 +4662,8 @@
       "name": "getMaxItemCooldownLeft",
       "scoped_name": "Player::getMaxItemCooldownLeft",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "public"
     },
     {
       "symbol": "?isItemOnCooldown@Player@@UEBA_NAEBVHashedString@@@Z",
@@ -4674,8 +4674,8 @@
       "parameter_types": [
         "class HashedString const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "bool",
+      "visibility": "public"
     },
     {
       "symbol": "?sendInventoryTransaction@ServerPlayer@@UEBAXAEBVInventoryTransaction@@@Z",
@@ -4686,8 +4686,8 @@
       "parameter_types": [
         "class InventoryTransaction const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?sendComplexInventoryTransaction@ServerPlayer@@UEBAXV?$unique_ptr@VComplexInventoryTransaction@@U?$default_delete@VComplexInventoryTransaction@@@std@@@std@@@Z",
@@ -4698,8 +4698,8 @@
       "parameter_types": [
         "class std::unique_ptr<class ComplexInventoryTransaction,struct std::default_delete<class ComplexInventoryTransaction> >"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?sendNetworkPacket@ServerPlayer@@UEBAXAEAVPacket@@@Z",
@@ -4710,8 +4710,8 @@
       "parameter_types": [
         "class Packet &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getPlayerEventCoordinator@ServerPlayer@@UEAAAEAVPlayerEventCoordinator@@XZ",
@@ -4720,8 +4720,8 @@
       "name": "getPlayerEventCoordinator",
       "scoped_name": "ServerPlayer::getPlayerEventCoordinator",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class PlayerEventCoordinator &",
+      "visibility": "public"
     },
     {
       "symbol": "?reportMovementTelemetry@ServerPlayer@@UEAAXW4MovementEventType@@@Z",
@@ -4732,8 +4732,8 @@
       "parameter_types": [
         "enum MovementEventType"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getReturnPolicy@?$MemberPropertyGetter@VMovementScriptActorComponent@ScriptModuleMinecraft@@$0A@$MP812@EBA?AV?$Result@M@Scripting@@XZ1??_912@$B7AA@Reflection@Scripting@@UEBA?AW4ReturnPolicy@23@XZ",
@@ -4743,7 +4743,7 @@
       "scoped_name": "Scripting::Reflection::MemberPropertyGetter<ScriptModuleMinecraft::MovementScriptActorComponent,0,&ScriptModuleMinecraft::MovementScriptActorComponent::`vcall'{8}'>::getReturnPolicy",
       "parameter_types": [],
       "return_type": "",
-      "visibility": ""
+      "visibility": "public"
     },
     {
       "symbol": "?getXuid@Player@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
@@ -4752,8 +4752,8 @@
       "name": "getXuid",
       "scoped_name": "Player::getXuid",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >",
+      "visibility": "public"
     },
     {
       "symbol": "?getMovementSettings@Player@@UEBAAEBUPlayerMovementSettings@@XZ",
@@ -4762,8 +4762,8 @@
       "name": "getMovementSettings",
       "scoped_name": "Player::getMovementSettings",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "struct PlayerMovementSettings const &",
+      "visibility": "public"
     },
     {
       "symbol": "?singleTick@?$StrictTickingSystemFunctionAdapter@$MP6AXV?$ViewT@VStrictEntityContext@@VEntityRegistryBase@@U?$Include@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@VActorMovementProxyComponent@@VActorOwnerComponent@@@@@Z1?tickClient@AgentTravelSystem@@SAX0@Z$M$$VS@@MEAAXAEAV?$StrictExecutionContext@U?$Filter@V?$FlagComponent@UActorMovementTickNeededFlag@@@@V?$FlagComponent@UUsesECSMovementFlag@@@@V?$FlagComponent@UAgentFlag@@@@@@U?$Read@$$V@@U?$Write@VActorMovementProxyComponent@@VActorOwnerComponent@@@@U?$AddRemove@$$V@@U?$GlobalRead@$$V@@U?$GlobalWrite@$$V@@U?$EntityFactoryT@$$V@@@@AEAVStrictEntityContext@@@Z",
@@ -4782,8 +4782,8 @@
       "name": "getMaxChunkBuildRadius",
       "scoped_name": "ServerPlayer::getMaxChunkBuildRadius",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "unsigned char",
+      "visibility": "public"
     },
     {
       "symbol": "?onMovePlayerPacketNormal@Player@@MEAAXAEBVVec3@@AEBVVec2@@M@Z",
@@ -4796,8 +4796,8 @@
         "class Vec2 const &",
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     },
     {
       "symbol": "?_createChunkSource@Player@@MEAA?AV?$shared_ptr@VChunkViewSource@@@std@@AEAVChunkSource@@@Z",
@@ -4808,8 +4808,8 @@
       "parameter_types": [
         "class ChunkSource &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class std::shared_ptr<class ChunkViewSource>",
+      "visibility": "protected"
     },
     {
       "symbol": "?setAbilities@Player@@UEAAXAEBVLayeredAbilities@@@Z",
@@ -4820,8 +4820,8 @@
       "parameter_types": [
         "class LayeredAbilities const &"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?getEditorPlayer@ServerPlayer@@UEBA?AV?$NonOwnerPointer@VIEditorPlayer@Editor@@@Bedrock@@XZ",
@@ -4830,8 +4830,8 @@
       "name": "getEditorPlayer",
       "scoped_name": "ServerPlayer::getEditorPlayer",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "class Bedrock::NonOwnerPointer<class Editor::IEditorPlayer>",
+      "visibility": "public"
     },
     {
       "symbol": "?destroyEditorPlayer@ServerPlayer@@UEAAXXZ",
@@ -4840,8 +4840,8 @@
       "name": "destroyEditorPlayer",
       "scoped_name": "ServerPlayer::destroyEditorPlayer",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "public"
     },
     {
       "symbol": "?_getSpawnChunkLimit@ServerPlayer@@MEBAHXZ",
@@ -4850,8 +4850,8 @@
       "name": "_getSpawnChunkLimit",
       "scoped_name": "ServerPlayer::_getSpawnChunkLimit",
       "parameter_types": [],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "int",
+      "visibility": "protected"
     },
     {
       "symbol": "?_updateChunkPublisherView@ServerPlayer@@MEAAXAEBVVec3@@M@Z",
@@ -4863,8 +4863,8 @@
         "class Vec3 const &",
         "float"
       ],
-      "return_type": "",
-      "visibility": ""
+      "return_type": "void",
+      "visibility": "protected"
     }
   ]
 }

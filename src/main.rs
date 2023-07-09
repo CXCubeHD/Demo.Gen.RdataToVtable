@@ -107,7 +107,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     let re1_2 = Regex::new(r"\((.*?)\)")?;
     for it in gen_methods.iter_mut() {
         if let Some(s) = re1_2.find(&it.cleaned_symbol) {
-            let s_parameters = s.as_str()[1..(s.as_str().len() - 1)].to_string();
+            let s_parameters = s.as_str()[1..(s.len() - 1)].to_string();
 
             let mut parameters: Vec<&str> = s_parameters.split(",").collect::<Vec<_>>();
 
@@ -142,6 +142,24 @@ fn main() -> Result<(), Box<dyn Error>> {
 
             it.parameter_types =
                 Vec::from_iter(combined_parameters.iter().map(|p| p.trim().to_string()));
+        }
+    }
+
+    /* Extract return type */
+    for it in gen_methods.iter_mut() {
+        if let Some(s) = it
+            .cleaned_symbol
+            .find(format!(" {}(", it.scoped_name.as_str()).as_str())
+        {
+            it.return_type = it.cleaned_symbol[..s].to_string();
+        }
+    }
+
+    /* Extract visibility */
+    let re1_4 = Regex::new(r"(^(?:public|private|protected)):")?;
+    for it in gen_methods.iter_mut() {
+        if let Some(s) = re1_4.find(&it.undecorated_symbol) {
+            it.visibility = s.as_str()[..(s.len() - 1)].to_string();
         }
     }
 
