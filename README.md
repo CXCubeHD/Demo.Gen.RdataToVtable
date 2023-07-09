@@ -17,12 +17,55 @@ This project converts IDA rdata (Windows only) to json:
 
 ```json
 {
+  "type": "ServerPlayer",
   "methods": [
-    "getStatusFlag",
-    "setStatusFlag",
-    "hasComponent",
-    "getLastHurtByMob",
-  ],
-  "type": "ServerPlayer"
+    {
+      "symbol": "?getStatusFlag@Actor@@UEBA_NW4ActorFlags@@@Z",
+      "undecorated_symbol": "public: virtual bool __cdecl Actor::getStatusFlag(enum ActorFlags)const __ptr64",
+      "cleaned_symbol": "bool Actor::getStatusFlag(enum ActorFlags)const ",
+      "name": "getStatusFlag",
+      "scoped_name": "Actor::getStatusFlag",
+      "parameter_types": [
+        "enum ActorFlags"
+      ],
+      "return_type": "bool",
+      "visibility": "public"
+    },
+    {
+      "symbol": "?setStatusFlag@Actor@@UEAAXW4ActorFlags@@_N@Z",
+      "undecorated_symbol": "public: virtual void __cdecl Actor::setStatusFlag(enum ActorFlags,bool) __ptr64",
+      "cleaned_symbol": "void Actor::setStatusFlag(enum ActorFlags,bool)",
+      "name": "setStatusFlag",
+      "scoped_name": "Actor::setStatusFlag",
+      "parameter_types": [
+        "enum ActorFlags",
+        "bool"
+      ],
+      "return_type": "void",
+      "visibility": "public"
+    },
+    {
+      "symbol": "?hasComponent@Mob@@UEBA_NAEBVHashedString@@@Z",
+      "undecorated_symbol": "public: virtual bool __cdecl Mob::hasComponent(class HashedString const & __ptr64)const __ptr64",
+      "cleaned_symbol": "bool Mob::hasComponent(class HashedString const &)const ",
+      "name": "hasComponent",
+      "scoped_name": "Mob::hasComponent",
+      "parameter_types": [
+        "class HashedString const &"
+      ],
+      "return_type": "bool",
+      "visibility": "public"
+    },
+    {
+      "symbol": "?getLastHurtByMob@Actor@@UEAAPEAVMob@@XZ",
+      "undecorated_symbol": "public: virtual class Mob * __ptr64 __cdecl Actor::getLastHurtByMob(void) __ptr64",
+      "cleaned_symbol": "class Mob * Actor::getLastHurtByMob(void)",
+      "name": "getLastHurtByMob",
+      "scoped_name": "Actor::getLastHurtByMob",
+      "parameter_types": [],
+      "return_type": "class Mob *",
+      "visibility": "public"
+    }
+  ]
 }
 ```
