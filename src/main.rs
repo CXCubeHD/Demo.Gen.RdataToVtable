@@ -1,3 +1,7 @@
+mod gen;
+
+use crate::gen::*;
+
 use std::{
     error::Error,
     fs::File,
@@ -15,32 +19,133 @@ fn main() -> Result<(), Box<dyn Error>> {
     file_in.read_to_string(&mut text)?;
 
     let mut gen_type = "";
-    let mut gen_methods: Vec<String> = vec![];
+    let mut gen_methods: Vec<GenMethod> = vec![];
 
+    /* Extract methods */
     let re1 = Regex::new(r"dq offset (\?[^ ;\n\r]+)")?;
     for it in re1.find_iter(&text) {
         let its = windows::core::HSTRING::from(&it.as_str()[10..]);
 
-        let mut s_bytes: [u16; 300] = [0; 300];
-        let s_size = unsafe {
+        const NAME_LENGTH_SIZE: usize = 500;
+        const NAME_LENGTH_LIMIT: usize = 490;
+        let mut s_bytes: [u16; NAME_LENGTH_SIZE];
+        let mut s_size: usize;
+
+        /* Undecorated Symbol */
+        s_bytes = [0; NAME_LENGTH_SIZE];
+        s_size = unsafe {
+            UnDecorateSymbolNameW(
+                PCWSTR::from_raw(its.as_ptr()),
+                s_bytes.as_mut_slice(),
+                UNDNAME_COMPLETE,
+            ) as usize
+        };
+
+        let mut undecorated_symbol = String::from_utf16_lossy(&s_bytes);
+        undecorated_symbol.truncate(s_size);
+        if undecorated_symbol.len() > NAME_LENGTH_LIMIT {
+            undecorated_symbol = String::new();
+        }
+
+        /* Cleaned Symbol */
+        s_bytes = [0; NAME_LENGTH_SIZE];
+        s_size = unsafe {
+            UnDecorateSymbolNameW(
+                PCWSTR::from_raw(its.as_ptr()),
+                s_bytes.as_mut_slice(),
+                UNDNAME_NO_THROW_SIGNATURES
+                    | UNDNAME_NO_ACCESS_SPECIFIERS
+                    | UNDNAME_NO_ALLOCATION_MODEL
+                    | UNDNAME_NO_SPECIAL_SYMS
+                    | UNDNAME_NO_ALLOCATION_LANGUAGE
+                    | UNDNAME_NO_MS_KEYWORDS
+                    | UNDNAME_NO_MEMBER_TYPE,
+            ) as usize
+        };
+
+        let mut cleaned_symbol = String::from_utf16_lossy(&s_bytes);
+        cleaned_symbol.truncate(s_size);
+        if cleaned_symbol.len() > NAME_LENGTH_LIMIT {
+            cleaned_symbol = String::new();
+        }
+
+        /* Name Only */
+        s_bytes = [0; NAME_LENGTH_SIZE];
+        s_size = unsafe {
             UnDecorateSymbolNameW(
                 PCWSTR::from_raw(its.as_ptr()),
                 s_bytes.as_mut_slice(),
                 UNDNAME_NAME_ONLY,
-            )
+            ) as usize
         };
-        let mut s_string = String::from_utf16_lossy(&s_bytes);
-        s_string.truncate(s_size as usize);
-        gen_methods.push(s_string.clone());
+
+        let mut name_only = String::from_utf16_lossy(&s_bytes);
+        name_only.truncate(s_size);
+        if name_only.len() > NAME_LENGTH_LIMIT {
+            name_only = String::new();
+        }
+
+        gen_methods.push(GenMethod {
+            symbol: its.to_string(),
+            undecorated_symbol: undecorated_symbol.clone(),
+            cleaned_symbol: cleaned_symbol,
+            name: name_only.clone(),
+            scoped_name: name_only,
+            ..Default::default()
+        });
     }
 
+    /* Filter method name */
     let re1_1 = Regex::new(r"([^:\n]+)$")?;
     for it in gen_methods.iter_mut() {
-        if let Some(s) = re1_1.find(&it) {
-            *it = s.as_str().to_string();
+        if let Some(s) = re1_1.find(&it.name) {
+            it.name = s.as_str().to_string();
         }
     }
 
+    /* Extract parameters */
+    let re1_2 = Regex::new(r"\((.*?)\)")?;
+    for it in gen_methods.iter_mut() {
+        if let Some(s) = re1_2.find(&it.cleaned_symbol) {
+            let s_parameters = s.as_str()[1..(s.as_str().len() - 1)].to_string();
+
+            let mut parameters: Vec<&str> = s_parameters.split(",").collect::<Vec<_>>();
+
+            if parameters.first().unwrap_or(&"void") == &"void" {
+                parameters = Vec::new()
+            }
+
+            let mut combined_parameters = Vec::<String>::new();
+            let mut temp_parameter = String::new();
+            let mut angle_brackets_count: i32 = 0;
+
+            for p in parameters {
+                let c1 = p.match_indices("<").collect::<Vec<_>>().len() as i32;
+                let c2 = p.match_indices(">").collect::<Vec<_>>().len() as i32;
+
+                if angle_brackets_count == 0 {
+                    temp_parameter += p;
+                    if c1 > c2 {
+                        angle_brackets_count += c1 - c2;
+                    }
+                } else {
+                    temp_parameter += ",";
+                    temp_parameter += p;
+                    angle_brackets_count += c1 - c2;
+                }
+
+                if angle_brackets_count == 0 {
+                    combined_parameters.push(temp_parameter);
+                    temp_parameter = String::new();
+                }
+            }
+
+            it.parameter_types =
+                Vec::from_iter(combined_parameters.iter().map(|p| p.trim().to_string()));
+        }
+    }
+
+    /* Get type name */
     let re2 = Regex::new(r"const ([\w@:]+)::`vftable'")?;
     if let Some(it) = re2.find(&text) {
         let s = it.as_str();
