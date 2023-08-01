@@ -105,12 +105,12 @@ fn main() -> Result<(), Box<dyn Error>> {
         {
             let its = &it.as_str()[10..];
 
-            let mut undecorated_symbol = demangle(its, DemangleFlags::COMPLETE);
+            let mut undecorated_symbol = msvc_demangler::demangle(its, DemangleFlags::COMPLETE);
             if undecorated_symbol.len() > NAME_LENGTH_LIMIT {
                 undecorated_symbol = String::new();
             }
 
-            let mut cleaned_symbol = demangle(its, DemangleFlags::NO_ACCESS_SPECIFIERS
+            let mut cleaned_symbol = msvc_demangler::demangle(its, DemangleFlags::NO_ACCESS_SPECIFIERS
                 | DemangleFlags::NO_MS_KEYWORDS
                 | DemangleFlags::NO_MEMBER_TYPE);
             cleaned_symbol.truncate(s_size);
@@ -118,7 +118,7 @@ fn main() -> Result<(), Box<dyn Error>> {
                 cleaned_symbol = String::new();
             }
 
-            let mut name_only = demangle(its, DemangleFlags::NAME_ONLY);
+            let mut name_only = msvc_demangler::demangle(its, DemangleFlags::NAME_ONLY);
             name_only.truncate(s_size);
             if name_only.len() > NAME_LENGTH_LIMIT {
                 name_only = String::new();
