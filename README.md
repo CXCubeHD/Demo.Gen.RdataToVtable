@@ -2,7 +2,7 @@
 
 **This is just a demo, more features or changes may be added soon!**
 
-This project converts IDA rdata (Windows only) to json:
+This project converts IDA rdata to json:
 
 ```
 .rdata:000000014233D498 ; const ServerPlayer::`vftable'
