@@ -28,14 +28,16 @@ fn main() -> Result<(), Box<dyn Error>> {
     /* Extract methods */
     let re1 = Regex::new(r"dq offset (\?[^ ;\n\r]+)")?;
     for it in re1.find_iter(&text) {
-        const NAME_LENGTH_SIZE: usize = 500;
         const NAME_LENGTH_LIMIT: usize = 490;
-        let mut s_bytes: [u16; NAME_LENGTH_SIZE];
-        let mut s_size: usize;
 
         #[cfg(target_os = "windows")]
         {
             let its = windows::core::HSTRING::from(&it.as_str()[10..]);
+
+            const NAME_LENGTH_SIZE: usize = 500;
+
+            let mut s_bytes: [u16; NAME_LENGTH_SIZE];
+            let mut s_size: usize;
 
             /* Undecorated Symbol */
             s_bytes = [0; NAME_LENGTH_SIZE];
@@ -105,21 +107,25 @@ fn main() -> Result<(), Box<dyn Error>> {
         {
             let its = &it.as_str()[10..];
 
-            let mut undecorated_symbol = msvc_demangler::demangle(its, DemangleFlags::COMPLETE);
+            let mut undecorated_symbol =
+                msvc_demangler::demangle(its, DemangleFlags::COMPLETE).unwrap_or(String::new());
             if undecorated_symbol.len() > NAME_LENGTH_LIMIT {
                 undecorated_symbol = String::new();
             }
 
-            let mut cleaned_symbol = msvc_demangler::demangle(its, DemangleFlags::NO_ACCESS_SPECIFIERS
-                | DemangleFlags::NO_MS_KEYWORDS
-                | DemangleFlags::NO_MEMBER_TYPE);
-            cleaned_symbol.truncate(s_size);
+            let mut cleaned_symbol = msvc_demangler::demangle(
+                its,
+                DemangleFlags::NO_ACCESS_SPECIFIERS
+                    | DemangleFlags::NO_MS_KEYWORDS
+                    | DemangleFlags::NO_MEMBER_TYPE,
+            )
+            .unwrap_or(String::new());
             if cleaned_symbol.len() > NAME_LENGTH_LIMIT {
                 cleaned_symbol = String::new();
             }
 
-            let mut name_only = msvc_demangler::demangle(its, DemangleFlags::NAME_ONLY);
-            name_only.truncate(s_size);
+            let mut name_only =
+                msvc_demangler::demangle(its, DemangleFlags::NAME_ONLY).unwrap_or(String::new());
             if name_only.len() > NAME_LENGTH_LIMIT {
                 name_only = String::new();
             }
