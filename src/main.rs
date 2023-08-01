@@ -11,7 +11,11 @@ use std::{
 use regex::Regex;
 use serde_json::json;
 
+#[cfg(target_os = "windows")]
 use windows::{core::PCWSTR, Win32::System::Diagnostics::Debug::*};
+
+#[cfg(not(target_os = "windows"))]
+use msvc_demangler::DemangleFlags;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let mut text = String::new();
@@ -24,75 +28,111 @@ fn main() -> Result<(), Box<dyn Error>> {
     /* Extract methods */
     let re1 = Regex::new(r"dq offset (\?[^ ;\n\r]+)")?;
     for it in re1.find_iter(&text) {
-        let its = windows::core::HSTRING::from(&it.as_str()[10..]);
-
         const NAME_LENGTH_SIZE: usize = 500;
         const NAME_LENGTH_LIMIT: usize = 490;
         let mut s_bytes: [u16; NAME_LENGTH_SIZE];
         let mut s_size: usize;
 
-        /* Undecorated Symbol */
-        s_bytes = [0; NAME_LENGTH_SIZE];
-        s_size = unsafe {
-            UnDecorateSymbolNameW(
-                PCWSTR::from_raw(its.as_ptr()),
-                s_bytes.as_mut_slice(),
-                UNDNAME_COMPLETE,
-            ) as usize
-        };
+        #[cfg(target_os = "windows")]
+        {
+            let its = windows::core::HSTRING::from(&it.as_str()[10..]);
 
-        let mut undecorated_symbol = String::from_utf16_lossy(&s_bytes);
-        undecorated_symbol.truncate(s_size);
-        if undecorated_symbol.len() > NAME_LENGTH_LIMIT {
-            undecorated_symbol = String::new();
+            /* Undecorated Symbol */
+            s_bytes = [0; NAME_LENGTH_SIZE];
+            s_size = unsafe {
+                UnDecorateSymbolNameW(
+                    PCWSTR::from_raw(its.as_ptr()),
+                    s_bytes.as_mut_slice(),
+                    UNDNAME_COMPLETE,
+                ) as usize
+            };
+
+            let mut undecorated_symbol = String::from_utf16_lossy(&s_bytes);
+            undecorated_symbol.truncate(s_size);
+            if undecorated_symbol.len() > NAME_LENGTH_LIMIT {
+                undecorated_symbol = String::new();
+            }
+
+            /* Cleaned Symbol */
+            s_bytes = [0; NAME_LENGTH_SIZE];
+            s_size = unsafe {
+                UnDecorateSymbolNameW(
+                    PCWSTR::from_raw(its.as_ptr()),
+                    s_bytes.as_mut_slice(),
+                    UNDNAME_NO_THROW_SIGNATURES
+                        | UNDNAME_NO_ACCESS_SPECIFIERS
+                        | UNDNAME_NO_ALLOCATION_MODEL
+                        | UNDNAME_NO_SPECIAL_SYMS
+                        | UNDNAME_NO_ALLOCATION_LANGUAGE
+                        | UNDNAME_NO_MS_KEYWORDS
+                        | UNDNAME_NO_MEMBER_TYPE,
+                ) as usize
+            };
+
+            let mut cleaned_symbol = String::from_utf16_lossy(&s_bytes);
+            cleaned_symbol.truncate(s_size);
+            if cleaned_symbol.len() > NAME_LENGTH_LIMIT {
+                cleaned_symbol = String::new();
+            }
+
+            /* Name Only */
+            s_bytes = [0; NAME_LENGTH_SIZE];
+            s_size = unsafe {
+                UnDecorateSymbolNameW(
+                    PCWSTR::from_raw(its.as_ptr()),
+                    s_bytes.as_mut_slice(),
+                    UNDNAME_NAME_ONLY,
+                ) as usize
+            };
+
+            let mut name_only = String::from_utf16_lossy(&s_bytes);
+            name_only.truncate(s_size);
+            if name_only.len() > NAME_LENGTH_LIMIT {
+                name_only = String::new();
+            }
+
+            gen_methods.push(GenMethod {
+                symbol: its.to_string(),
+                undecorated_symbol: undecorated_symbol.clone(),
+                cleaned_symbol: cleaned_symbol,
+                name: name_only.clone(),
+                scoped_name: name_only,
+                ..Default::default()
+            });
         }
 
-        /* Cleaned Symbol */
-        s_bytes = [0; NAME_LENGTH_SIZE];
-        s_size = unsafe {
-            UnDecorateSymbolNameW(
-                PCWSTR::from_raw(its.as_ptr()),
-                s_bytes.as_mut_slice(),
-                UNDNAME_NO_THROW_SIGNATURES
-                    | UNDNAME_NO_ACCESS_SPECIFIERS
-                    | UNDNAME_NO_ALLOCATION_MODEL
-                    | UNDNAME_NO_SPECIAL_SYMS
-                    | UNDNAME_NO_ALLOCATION_LANGUAGE
-                    | UNDNAME_NO_MS_KEYWORDS
-                    | UNDNAME_NO_MEMBER_TYPE,
-            ) as usize
-        };
+        #[cfg(not(target_os = "windows"))]
+        {
+            let its = &it.as_str()[10..];
 
-        let mut cleaned_symbol = String::from_utf16_lossy(&s_bytes);
-        cleaned_symbol.truncate(s_size);
-        if cleaned_symbol.len() > NAME_LENGTH_LIMIT {
-            cleaned_symbol = String::new();
+            let mut undecorated_symbol = demangle(its, DemangleFlags::COMPLETE);
+            if undecorated_symbol.len() > NAME_LENGTH_LIMIT {
+                undecorated_symbol = String::new();
+            }
+
+            let mut cleaned_symbol = demangle(its, DemangleFlags::NO_ACCESS_SPECIFIERS
+                | DemangleFlags::NO_MS_KEYWORDS
+                | DemangleFlags::NO_MEMBER_TYPE);
+            cleaned_symbol.truncate(s_size);
+            if cleaned_symbol.len() > NAME_LENGTH_LIMIT {
+                cleaned_symbol = String::new();
+            }
+
+            let mut name_only = demangle(its, DemangleFlags::NAME_ONLY);
+            name_only.truncate(s_size);
+            if name_only.len() > NAME_LENGTH_LIMIT {
+                name_only = String::new();
+            }
+
+            gen_methods.push(GenMethod {
+                symbol: its.to_string(),
+                undecorated_symbol: undecorated_symbol.clone(),
+                cleaned_symbol: cleaned_symbol,
+                name: name_only.clone(),
+                scoped_name: name_only,
+                ..Default::default()
+            });
         }
-
-        /* Name Only */
-        s_bytes = [0; NAME_LENGTH_SIZE];
-        s_size = unsafe {
-            UnDecorateSymbolNameW(
-                PCWSTR::from_raw(its.as_ptr()),
-                s_bytes.as_mut_slice(),
-                UNDNAME_NAME_ONLY,
-            ) as usize
-        };
-
-        let mut name_only = String::from_utf16_lossy(&s_bytes);
-        name_only.truncate(s_size);
-        if name_only.len() > NAME_LENGTH_LIMIT {
-            name_only = String::new();
-        }
-
-        gen_methods.push(GenMethod {
-            symbol: its.to_string(),
-            undecorated_symbol: undecorated_symbol.clone(),
-            cleaned_symbol: cleaned_symbol,
-            name: name_only.clone(),
-            scoped_name: name_only,
-            ..Default::default()
-        });
     }
 
     /* Filter method name */
