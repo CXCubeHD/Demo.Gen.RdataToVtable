@@ -1,0 +1,28 @@
+[package]
+name = "r2v-parser"
+version = "0.1.0"
+edition = "2021"
+
+
+[features]
+parse = []
+serialize = []
+deserialize = []
+all = ["parse", "serialize", "deserialize"]
+
+
+[dependencies]
+regex = { version = "1.8", features = ["std"] }
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0", features = ["preserve_order"] }
+
+[target.'cfg(target_os = "windows")'.dependencies.windows]
+version = "0.48.0"
+features = [
+    "Win32_System_Diagnostics_Debug"
+]
+
+
+[target.'cfg(not(target_os = "windows"))'.dependencies]
+msvc-demangler = "0.9.0"

@@ -1,0 +1,15 @@
+[package]
+name = "r2v-gen"
+version = "0.1.0"
+edition = "2021"
+
+
+[features]
+generate_rs = []
+generate_cpp = []
+generate_c = []
+all = ["generate_rs", "generate_cpp", "generate_c"]
+
+
+[dependencies]
+r2v-parser = { path = "../parser" }

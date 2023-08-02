@@ -1,0 +1,11 @@
+[package]
+name = "r2v-cli"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+r2v-lib = { path = "../lib" }
+
+clap = "4.3"
+cli-clipboard = "0.4.0"
